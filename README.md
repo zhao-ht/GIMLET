@@ -6,13 +6,13 @@ This is the code for paper GIMLET: A Unified Graph-Text Model for Instruction-Ba
 GIMLET is a unified transformer model for both graph and text data and is pretrained on large scale molecule tasks with instructions, towards instruction-based molecule zero-shot learning.
 
 <div align=center>
-<img src="https://github.com/zhao-ht/GIMLET/blob/master/git/gimlet.png" width="600px">
+<img src="https://github.com/zhao-ht/GIMLET/blob/master/fig/gimlet.png" width="600px">
 </div>
 
 The pretraining and downstream tasks are as follows:
 
 <div align=center>
-<img src="https://github.com/zhao-ht/GIMLET/blob/master/git/mol_tasks.png" width="300px">
+<img src="https://github.com/zhao-ht/GIMLET/blob/master/fig/mol_tasks.png" width="300px">
 </div>
 
 
