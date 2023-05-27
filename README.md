@@ -93,7 +93,7 @@ cd ..
 ### Dataset Download
 
 
-####Downstream task Data
+#### Downstream task Data
 
 ```
 wget http://snap.stanford.edu/gnn-pretrain/data/chem_dataset.zip
@@ -105,7 +105,7 @@ Besides MoleculeNet, we also includes CYP450 which can be downloaded by
 ```
 ``` 
 
-####Pretraining Data
+#### Pretraining Data
 
 You can download the pretraining dataset if you want to reproduce the pretraining or train your own model:
 
