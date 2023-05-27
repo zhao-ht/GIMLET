@@ -1,0 +1,3289 @@
+{
+  "toxcast": {
+    "2": {
+      "name": [
+        "The assay name is APR_HepG2_CellCycleArrest_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "3": {
+      "name": [
+        "The assay name is APR_HepG2_CellCycleArrest_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "4": {
+      "name": [
+        "The assay name is APR_HepG2_CellCycleArrest_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "5": {
+      "name": [
+        "The assay name is APR_HepG2_CellLoss_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "6": {
+      "name": [
+        "The assay name is APR_HepG2_CellLoss_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "7": {
+      "name": [
+        "The assay name is APR_HepG2_MicrotubuleCSK_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "8": {
+      "name": [
+        "The assay name is APR_HepG2_MicrotubuleCSK_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "9": {
+      "name": [
+        "The assay name is APR_HepG2_MicrotubuleCSK_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "10": {
+      "name": [
+        "The assay name is APR_HepG2_MicrotubuleCSK_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "11": {
+      "name": [
+        "The assay name is APR_HepG2_MitoMass_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "12": {
+      "name": [
+        "The assay name is APR_HepG2_MitoMass_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "13": {
+      "name": [
+        "The assay name is APR_HepG2_MitoMass_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "14": {
+      "name": [
+        "The assay name is APR_HepG2_MitoMass_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "15": {
+      "name": [
+        "The assay name is APR_HepG2_MitoMembPot_1hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "16": {
+      "name": [
+        "The assay name is APR_HepG2_MitoMembPot_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "17": {
+      "name": [
+        "The assay name is APR_HepG2_MitoMembPot_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "18": {
+      "name": [
+        "The assay name is APR_HepG2_MitoticArrest_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "19": {
+      "name": [
+        "The assay name is APR_HepG2_MitoticArrest_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "20": {
+      "name": [
+        "The assay name is APR_HepG2_NuclearSize_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "21": {
+      "name": [
+        "The assay name is APR_HepG2_NuclearSize_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "22": {
+      "name": [
+        "The assay name is APR_HepG2_NuclearSize_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "25": {
+      "name": [
+        "The assay name is APR_HepG2_StressKinase_1hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "26": {
+      "name": [
+        "The assay name is APR_HepG2_StressKinase_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "27": {
+      "name": [
+        "The assay name is APR_HepG2_StressKinase_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "28": {
+      "name": [
+        "The assay name is APR_HepG2_p53Act_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "29": {
+      "name": [
+        "The assay name is APR_HepG2_p53Act_72hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "45": {
+      "name": [
+        "The assay name is ATG_AP_1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "46": {
+      "name": [
+        "The assay name is ATG_AP_1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "47": {
+      "name": [
+        "The assay name is ATG_AP_2_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "48": {
+      "name": [
+        "The assay name is ATG_AP_2_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "49": {
+      "name": [
+        "The assay name is ATG_AR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "50": {
+      "name": [
+        "The assay name is ATG_AR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "51": {
+      "name": [
+        "The assay name is ATG_Ahr_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "52": {
+      "name": [
+        "The assay name is ATG_Ahr_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "53": {
+      "name": [
+        "The assay name is ATG_BRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "54": {
+      "name": [
+        "The assay name is ATG_BRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "55": {
+      "name": [
+        "The assay name is ATG_CAR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "56": {
+      "name": [
+        "The assay name is ATG_CAR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "57": {
+      "name": [
+        "The assay name is ATG_CMV_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "58": {
+      "name": [
+        "The assay name is ATG_CMV_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "59": {
+      "name": [
+        "The assay name is ATG_CRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "60": {
+      "name": [
+        "The assay name is ATG_CRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "61": {
+      "name": [
+        "The assay name is ATG_C_EBP_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "62": {
+      "name": [
+        "The assay name is ATG_C_EBP_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "63": {
+      "name": [
+        "The assay name is ATG_DR4_LXR_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "64": {
+      "name": [
+        "The assay name is ATG_DR4_LXR_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "65": {
+      "name": [
+        "The assay name is ATG_DR5_RAR_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "66": {
+      "name": [
+        "The assay name is ATG_DR5_RAR_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "67": {
+      "name": [
+        "The assay name is ATG_E2F_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "68": {
+      "name": [
+        "The assay name is ATG_E2F_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "69": {
+      "name": [
+        "The assay name is ATG_EGR_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "70": {
+      "name": [
+        "The assay name is ATG_ERE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "71": {
+      "name": [
+        "The assay name is ATG_ERE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "72": {
+      "name": [
+        "The assay name is ATG_ERRa_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "73": {
+      "name": [
+        "The assay name is ATG_ERRg_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "74": {
+      "name": [
+        "The assay name is ATG_ERRg_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "75": {
+      "name": [
+        "The assay name is ATG_ERa_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "76": {
+      "name": [
+        "The assay name is ATG_E_Box_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "77": {
+      "name": [
+        "The assay name is ATG_E_Box_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "78": {
+      "name": [
+        "The assay name is ATG_Ets_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "79": {
+      "name": [
+        "The assay name is ATG_Ets_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "80": {
+      "name": [
+        "The assay name is ATG_FXR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "81": {
+      "name": [
+        "The assay name is ATG_FoxA2_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "82": {
+      "name": [
+        "The assay name is ATG_FoxA2_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "83": {
+      "name": [
+        "The assay name is ATG_FoxO_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "84": {
+      "name": [
+        "The assay name is ATG_FoxO_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "85": {
+      "name": [
+        "The assay name is ATG_GAL4_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "86": {
+      "name": [
+        "The assay name is ATG_GATA_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "87": {
+      "name": [
+        "The assay name is ATG_GATA_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "88": {
+      "name": [
+        "The assay name is ATG_GLI_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "89": {
+      "name": [
+        "The assay name is ATG_GLI_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "90": {
+      "name": [
+        "The assay name is ATG_GRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "91": {
+      "name": [
+        "The assay name is ATG_GRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "92": {
+      "name": [
+        "The assay name is ATG_GR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "93": {
+      "name": [
+        "The assay name is ATG_GR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "94": {
+      "name": [
+        "The assay name is ATG_HIF1a_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "95": {
+      "name": [
+        "The assay name is ATG_HIF1a_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "96": {
+      "name": [
+        "The assay name is ATG_HNF4a_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "97": {
+      "name": [
+        "The assay name is ATG_HNF4a_TRANS_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "98": {
+      "name": [
+        "The assay name is ATG_HNF6_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "99": {
+      "name": [
+        "The assay name is ATG_HNF6_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "100": {
+      "name": [
+        "The assay name is ATG_HSE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "101": {
+      "name": [
+        "The assay name is ATG_HSE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "102": {
+      "name": [
+        "The assay name is ATG_IR1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "103": {
+      "name": [
+        "The assay name is ATG_IR1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "104": {
+      "name": [
+        "The assay name is ATG_ISRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "105": {
+      "name": [
+        "The assay name is ATG_ISRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "106": {
+      "name": [
+        "The assay name is ATG_LXRa_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "107": {
+      "name": [
+        "The assay name is ATG_LXRa_TRANS_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "108": {
+      "name": [
+        "The assay name is ATG_LXRb_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "109": {
+      "name": [
+        "The assay name is ATG_LXRb_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "110": {
+      "name": [
+        "The assay name is ATG_MRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "111": {
+      "name": [
+        "The assay name is ATG_M_06_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "112": {
+      "name": [
+        "The assay name is ATG_M_19_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "113": {
+      "name": [
+        "The assay name is ATG_M_19_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "114": {
+      "name": [
+        "The assay name is ATG_M_19_TRANS_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "115": {
+      "name": [
+        "The assay name is ATG_M_32_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "116": {
+      "name": [
+        "The assay name is ATG_M_32_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "117": {
+      "name": [
+        "The assay name is ATG_M_32_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "118": {
+      "name": [
+        "The assay name is ATG_M_32_TRANS_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "119": {
+      "name": [
+        "The assay name is ATG_M_61_TRANS_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "120": {
+      "name": [
+        "The assay name is ATG_Myb_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "121": {
+      "name": [
+        "The assay name is ATG_Myb_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "122": {
+      "name": [
+        "The assay name is ATG_Myc_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "123": {
+      "name": [
+        "The assay name is ATG_Myc_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "124": {
+      "name": [
+        "The assay name is ATG_NFI_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "125": {
+      "name": [
+        "The assay name is ATG_NFI_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "126": {
+      "name": [
+        "The assay name is ATG_NF_kB_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "127": {
+      "name": [
+        "The assay name is ATG_NF_kB_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "128": {
+      "name": [
+        "The assay name is ATG_NRF1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "129": {
+      "name": [
+        "The assay name is ATG_NRF1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "130": {
+      "name": [
+        "The assay name is ATG_NRF2_ARE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "131": {
+      "name": [
+        "The assay name is ATG_NRF2_ARE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "132": {
+      "name": [
+        "The assay name is ATG_NURR1_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "133": {
+      "name": [
+        "The assay name is ATG_NURR1_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "134": {
+      "name": [
+        "The assay name is ATG_Oct_MLP_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "135": {
+      "name": [
+        "The assay name is ATG_Oct_MLP_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "136": {
+      "name": [
+        "The assay name is ATG_PBREM_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "137": {
+      "name": [
+        "The assay name is ATG_PBREM_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "138": {
+      "name": [
+        "The assay name is ATG_PPARa_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "139": {
+      "name": [
+        "The assay name is ATG_PPARa_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "140": {
+      "name": [
+        "The assay name is ATG_PPARd_TRANS_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "141": {
+      "name": [
+        "The assay name is ATG_PPARg_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "142": {
+      "name": [
+        "The assay name is ATG_PPRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "143": {
+      "name": [
+        "The assay name is ATG_PPRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "144": {
+      "name": [
+        "The assay name is ATG_PXRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "145": {
+      "name": [
+        "The assay name is ATG_PXRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "146": {
+      "name": [
+        "The assay name is ATG_PXR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "147": {
+      "name": [
+        "The assay name is ATG_PXR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "148": {
+      "name": [
+        "The assay name is ATG_Pax6_CIS_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "149": {
+      "name": [
+        "The assay name is ATG_RARa_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "150": {
+      "name": [
+        "The assay name is ATG_RARa_TRANS_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "151": {
+      "name": [
+        "The assay name is ATG_RARb_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "152": {
+      "name": [
+        "The assay name is ATG_RARb_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "153": {
+      "name": [
+        "The assay name is ATG_RARg_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "154": {
+      "name": [
+        "The assay name is ATG_RARg_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "155": {
+      "name": [
+        "The assay name is ATG_RORE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "156": {
+      "name": [
+        "The assay name is ATG_RORE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "157": {
+      "name": [
+        "The assay name is ATG_RORb_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "158": {
+      "name": [
+        "The assay name is ATG_RORg_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "159": {
+      "name": [
+        "The assay name is ATG_RORg_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "160": {
+      "name": [
+        "The assay name is ATG_RXRa_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "161": {
+      "name": [
+        "The assay name is ATG_RXRa_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "162": {
+      "name": [
+        "The assay name is ATG_RXRb_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "163": {
+      "name": [
+        "The assay name is ATG_RXRb_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "164": {
+      "name": [
+        "The assay name is ATG_SREBP_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "165": {
+      "name": [
+        "The assay name is ATG_SREBP_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "166": {
+      "name": [
+        "The assay name is ATG_STAT3_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "167": {
+      "name": [
+        "The assay name is ATG_STAT3_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "168": {
+      "name": [
+        "The assay name is ATG_Sox_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "169": {
+      "name": [
+        "The assay name is ATG_Sox_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "170": {
+      "name": [
+        "The assay name is ATG_Sp1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "171": {
+      "name": [
+        "The assay name is ATG_Sp1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "172": {
+      "name": [
+        "The assay name is ATG_TAL_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "173": {
+      "name": [
+        "The assay name is ATG_TAL_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "174": {
+      "name": [
+        "The assay name is ATG_TA_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "175": {
+      "name": [
+        "The assay name is ATG_TA_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "176": {
+      "name": [
+        "The assay name is ATG_TCF_b_cat_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "177": {
+      "name": [
+        "The assay name is ATG_TCF_b_cat_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "178": {
+      "name": [
+        "The assay name is ATG_TGFb_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "179": {
+      "name": [
+        "The assay name is ATG_TGFb_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "180": {
+      "name": [
+        "The assay name is ATG_THRa1_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "181": {
+      "name": [
+        "The assay name is ATG_THRa1_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "182": {
+      "name": [
+        "The assay name is ATG_VDRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "183": {
+      "name": [
+        "The assay name is ATG_VDRE_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "184": {
+      "name": [
+        "The assay name is ATG_VDR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "185": {
+      "name": [
+        "The assay name is ATG_VDR_TRANS. Is this molecule effective to this assay?"
+      ]
+    },
+    "186": {
+      "name": [
+        "The assay name is ATG_XTT_Cytotoxicity. Is this molecule effective to this assay?"
+      ]
+    },
+    "187": {
+      "name": [
+        "The assay name is ATG_Xbp1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "188": {
+      "name": [
+        "The assay name is ATG_Xbp1_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "189": {
+      "name": [
+        "The assay name is ATG_p53_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "190": {
+      "name": [
+        "The assay name is ATG_p53_CIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "191": {
+      "name": [
+        "The assay name is BSK_3C_Eselectin_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "192": {
+      "name": [
+        "The assay name is BSK_3C_HLADR_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "193": {
+      "name": [
+        "The assay name is BSK_3C_ICAM1_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "194": {
+      "name": [
+        "The assay name is BSK_3C_IL8. Is this molecule effective to this assay?"
+      ]
+    },
+    "195": {
+      "name": [
+        "The assay name is BSK_3C_MCP1_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "196": {
+      "name": [
+        "The assay name is BSK_3C_MIG_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "197": {
+      "name": [
+        "The assay name is BSK_3C_Proliferation_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "198": {
+      "name": [
+        "The assay name is BSK_3C_SRB. Is this molecule effective to this assay?"
+      ]
+    },
+    "199": {
+      "name": [
+        "The assay name is BSK_3C_Thrombomodulin_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "200": {
+      "name": [
+        "The assay name is BSK_3C_Thrombomodulin. Is this molecule effective to this assay?"
+      ]
+    },
+    "201": {
+      "name": [
+        "The assay name is BSK_3C_TissueFactor. Is this molecule effective to this assay?"
+      ]
+    },
+    "202": {
+      "name": [
+        "The assay name is BSK_3C_TissueFactor. Is this molecule effective to this assay?"
+      ]
+    },
+    "203": {
+      "name": [
+        "The assay name is BSK_3C_VCAM1. Is this molecule effective to this assay?"
+      ]
+    },
+    "204": {
+      "name": [
+        "The assay name is BSK_3C_Vis_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "205": {
+      "name": [
+        "The assay name is BSK_3C_uPAR_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "206": {
+      "name": [
+        "The assay name is BSK_4H_Eotaxin3. Is this molecule effective to this assay?"
+      ]
+    },
+    "207": {
+      "name": [
+        "The assay name is BSK_4H_MCP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "208": {
+      "name": [
+        "The assay name is BSK_4H_Pselectin. Is this molecule effective to this assay?"
+      ]
+    },
+    "209": {
+      "name": [
+        "The assay name is BSK_4H_Pselectin. Is this molecule effective to this assay?"
+      ]
+    },
+    "210": {
+      "name": [
+        "The assay name is BSK_4H_SRB. Is this molecule effective to this assay?"
+      ]
+    },
+    "211": {
+      "name": [
+        "The assay name is BSK_4H_VCAM1. Is this molecule effective to this assay?"
+      ]
+    },
+    "212": {
+      "name": [
+        "The assay name is BSK_4H_VEGFRII_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "213": {
+      "name": [
+        "The assay name is BSK_4H_uPAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "214": {
+      "name": [
+        "The assay name is BSK_4H_uPAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "215": {
+      "name": [
+        "The assay name is BSK_BE3C_HLADR. Is this molecule effective to this assay?"
+      ]
+    },
+    "216": {
+      "name": [
+        "The assay name is BSK_BE3C_IL1a. Is this molecule effective to this assay?"
+      ]
+    },
+    "217": {
+      "name": [
+        "The assay name is BSK_BE3C_IP10. Is this molecule effective to this assay?"
+      ]
+    },
+    "218": {
+      "name": [
+        "The assay name is BSK_BE3C_MIG_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "219": {
+      "name": [
+        "The assay name is BSK_BE3C_MMP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "220": {
+      "name": [
+        "The assay name is BSK_BE3C_MMP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "221": {
+      "name": [
+        "The assay name is BSK_BE3C_PAI1. Is this molecule effective to this assay?"
+      ]
+    },
+    "222": {
+      "name": [
+        "The assay name is BSK_BE3C_SRB. Is this molecule effective to this assay?"
+      ]
+    },
+    "223": {
+      "name": [
+        "The assay name is BSK_BE3C_TGFb1. Is this molecule effective to this assay?"
+      ]
+    },
+    "224": {
+      "name": [
+        "The assay name is BSK_BE3C_tPA. Is this molecule effective to this assay?"
+      ]
+    },
+    "225": {
+      "name": [
+        "The assay name is BSK_BE3C_uPAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "226": {
+      "name": [
+        "The assay name is BSK_BE3C_uPAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "227": {
+      "name": [
+        "The assay name is BSK_BE3C_uPA. Is this molecule effective to this assay?"
+      ]
+    },
+    "228": {
+      "name": [
+        "The assay name is BSK_CASM3C_HLADR_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "229": {
+      "name": [
+        "The assay name is BSK_CASM3C_IL6. Is this molecule effective to this assay?"
+      ]
+    },
+    "230": {
+      "name": [
+        "The assay name is BSK_CASM3C_IL6. Is this molecule effective to this assay?"
+      ]
+    },
+    "231": {
+      "name": [
+        "The assay name is BSK_CASM3C_IL8. Is this molecule effective to this assay?"
+      ]
+    },
+    "232": {
+      "name": [
+        "The assay name is BSK_CASM3C_LDLR. Is this molecule effective to this assay?"
+      ]
+    },
+    "233": {
+      "name": [
+        "The assay name is BSK_CASM3C_LDLR. Is this molecule effective to this assay?"
+      ]
+    },
+    "234": {
+      "name": [
+        "The assay name is BSK_CASM3C_MCP1_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "235": {
+      "name": [
+        "The assay name is BSK_CASM3C_MCP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "236": {
+      "name": [
+        "The assay name is BSK_CASM3C_MCSF. Is this molecule effective to this assay?"
+      ]
+    },
+    "237": {
+      "name": [
+        "The assay name is BSK_CASM3C_MCSF. Is this molecule effective to this assay?"
+      ]
+    },
+    "238": {
+      "name": [
+        "The assay name is BSK_CASM3C_MIG_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "239": {
+      "name": [
+        "The assay name is BSK_CASM3C_Proliferation. Is this molecule effective to this assay?"
+      ]
+    },
+    "240": {
+      "name": [
+        "The assay name is BSK_CASM3C_Proliferation. Is this molecule effective to this assay?"
+      ]
+    },
+    "241": {
+      "name": [
+        "The assay name is BSK_CASM3C_SAA. Is this molecule effective to this assay?"
+      ]
+    },
+    "242": {
+      "name": [
+        "The assay name is BSK_CASM3C_SAA. Is this molecule effective to this assay?"
+      ]
+    },
+    "243": {
+      "name": [
+        "The assay name is BSK_CASM3C_SRB. Is this molecule effective to this assay?"
+      ]
+    },
+    "244": {
+      "name": [
+        "The assay name is BSK_CASM3C_Thrombomodulin. Is this molecule effective to this assay?"
+      ]
+    },
+    "245": {
+      "name": [
+        "The assay name is BSK_CASM3C_Thrombomodulin. Is this molecule effective to this assay?"
+      ]
+    },
+    "246": {
+      "name": [
+        "The assay name is BSK_CASM3C_TissueFactor. Is this molecule effective to this assay?"
+      ]
+    },
+    "247": {
+      "name": [
+        "The assay name is BSK_CASM3C_VCAM1. Is this molecule effective to this assay?"
+      ]
+    },
+    "248": {
+      "name": [
+        "The assay name is BSK_CASM3C_VCAM1. Is this molecule effective to this assay?"
+      ]
+    },
+    "249": {
+      "name": [
+        "The assay name is BSK_CASM3C_uPAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "250": {
+      "name": [
+        "The assay name is BSK_CASM3C_uPAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "251": {
+      "name": [
+        "The assay name is BSK_KF3CT_ICAM1_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "252": {
+      "name": [
+        "The assay name is BSK_KF3CT_IL1a_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "253": {
+      "name": [
+        "The assay name is BSK_KF3CT_IP10_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "254": {
+      "name": [
+        "The assay name is BSK_KF3CT_IP10. Is this molecule effective to this assay?"
+      ]
+    },
+    "255": {
+      "name": [
+        "The assay name is BSK_KF3CT_MCP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "256": {
+      "name": [
+        "The assay name is BSK_KF3CT_MCP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "257": {
+      "name": [
+        "The assay name is BSK_KF3CT_MMP9. Is this molecule effective to this assay?"
+      ]
+    },
+    "258": {
+      "name": [
+        "The assay name is BSK_KF3CT_SRB. Is this molecule effective to this assay?"
+      ]
+    },
+    "259": {
+      "name": [
+        "The assay name is BSK_KF3CT_TGFb1. Is this molecule effective to this assay?"
+      ]
+    },
+    "260": {
+      "name": [
+        "The assay name is BSK_KF3CT_TIMP2. Is this molecule effective to this assay?"
+      ]
+    },
+    "261": {
+      "name": [
+        "The assay name is BSK_KF3CT_uPA_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "262": {
+      "name": [
+        "The assay name is BSK_LPS_CD40. Is this molecule effective to this assay?"
+      ]
+    },
+    "263": {
+      "name": [
+        "The assay name is BSK_LPS_Eselectin. Is this molecule effective to this assay?"
+      ]
+    },
+    "264": {
+      "name": [
+        "The assay name is BSK_LPS_Eselectin. Is this molecule effective to this assay?"
+      ]
+    },
+    "265": {
+      "name": [
+        "The assay name is BSK_LPS_IL1a. Is this molecule effective to this assay?"
+      ]
+    },
+    "266": {
+      "name": [
+        "The assay name is BSK_LPS_IL1a. Is this molecule effective to this assay?"
+      ]
+    },
+    "267": {
+      "name": [
+        "The assay name is BSK_LPS_IL8_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "268": {
+      "name": [
+        "The assay name is BSK_LPS_IL8_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "269": {
+      "name": [
+        "The assay name is BSK_LPS_MCP1_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "270": {
+      "name": [
+        "The assay name is BSK_LPS_MCSF_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "271": {
+      "name": [
+        "The assay name is BSK_LPS_PGE2. Is this molecule effective to this assay?"
+      ]
+    },
+    "272": {
+      "name": [
+        "The assay name is BSK_LPS_PGE2. Is this molecule effective to this assay?"
+      ]
+    },
+    "273": {
+      "name": [
+        "The assay name is BSK_LPS_SRB_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "274": {
+      "name": [
+        "The assay name is BSK_LPS_TNFa. Is this molecule effective to this assay?"
+      ]
+    },
+    "275": {
+      "name": [
+        "The assay name is BSK_LPS_TNFa. Is this molecule effective to this assay?"
+      ]
+    },
+    "276": {
+      "name": [
+        "The assay name is BSK_LPS_TissueFactor_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "277": {
+      "name": [
+        "The assay name is BSK_LPS_TissueFactor_up. Is this molecule effective to this assay?"
+      ]
+    },
+    "278": {
+      "name": [
+        "The assay name is BSK_LPS_VCAM1. Is this molecule effective to this assay?"
+      ]
+    },
+    "279": {
+      "name": [
+        "The assay name is BSK_SAg_CD38. Is this molecule effective to this assay?"
+      ]
+    },
+    "280": {
+      "name": [
+        "The assay name is BSK_SAg_CD40. Is this molecule effective to this assay?"
+      ]
+    },
+    "281": {
+      "name": [
+        "The assay name is BSK_SAg_CD69. Is this molecule effective to this assay?"
+      ]
+    },
+    "282": {
+      "name": [
+        "The assay name is BSK_SAg_Eselectin. Is this molecule effective to this assay?"
+      ]
+    },
+    "283": {
+      "name": [
+        "The assay name is BSK_SAg_Eselectin. Is this molecule effective to this assay?"
+      ]
+    },
+    "284": {
+      "name": [
+        "The assay name is BSK_SAg_IL8. Is this molecule effective to this assay?"
+      ]
+    },
+    "285": {
+      "name": [
+        "The assay name is BSK_SAg_IL8. Is this molecule effective to this assay?"
+      ]
+    },
+    "286": {
+      "name": [
+        "The assay name is BSK_SAg_MCP1_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "287": {
+      "name": [
+        "The assay name is BSK_SAg_MIG_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "288": {
+      "name": [
+        "The assay name is BSK_SAg_PBMCCytotoxicity. Is this molecule effective to this assay?"
+      ]
+    },
+    "289": {
+      "name": [
+        "The assay name is BSK_SAg_PBMCCytotoxicity. Is this molecule effective to this assay?"
+      ]
+    },
+    "290": {
+      "name": [
+        "The assay name is BSK_SAg_Proliferation. Is this molecule effective to this assay?"
+      ]
+    },
+    "291": {
+      "name": [
+        "The assay name is BSK_SAg_SRB. Is this molecule effective to this assay?"
+      ]
+    },
+    "292": {
+      "name": [
+        "The assay name is BSK_hDFCGF_CollagenIII_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "293": {
+      "name": [
+        "The assay name is BSK_hDFCGF_EGFR. Is this molecule effective to this assay?"
+      ]
+    },
+    "294": {
+      "name": [
+        "The assay name is BSK_hDFCGF_EGFR. Is this molecule effective to this assay?"
+      ]
+    },
+    "295": {
+      "name": [
+        "The assay name is BSK_hDFCGF_IL8. Is this molecule effective to this assay?"
+      ]
+    },
+    "296": {
+      "name": [
+        "The assay name is BSK_hDFCGF_IP10. Is this molecule effective to this assay?"
+      ]
+    },
+    "297": {
+      "name": [
+        "The assay name is BSK_hDFCGF_MCSF_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "298": {
+      "name": [
+        "The assay name is BSK_hDFCGF_MIG_down. Is this molecule effective to this assay?"
+      ]
+    },
+    "299": {
+      "name": [
+        "The assay name is BSK_hDFCGF_MMP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "300": {
+      "name": [
+        "The assay name is BSK_hDFCGF_MMP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "301": {
+      "name": [
+        "The assay name is BSK_hDFCGF_PAI1. Is this molecule effective to this assay?"
+      ]
+    },
+    "302": {
+      "name": [
+        "The assay name is BSK_hDFCGF_Proliferation. Is this molecule effective to this assay?"
+      ]
+    },
+    "303": {
+      "name": [
+        "The assay name is BSK_hDFCGF_SRB. Is this molecule effective to this assay?"
+      ]
+    },
+    "304": {
+      "name": [
+        "The assay name is BSK_hDFCGF_TIMP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "305": {
+      "name": [
+        "The assay name is BSK_hDFCGF_VCAM1. Is this molecule effective to this assay?"
+      ]
+    },
+    "306": {
+      "name": [
+        "The assay name is CEETOX_H295R_11DCORT. Is this molecule effective to this assay?"
+      ]
+    },
+    "307": {
+      "name": [
+        "The assay name is CEETOX_H295R_ANDR. Is this molecule effective to this assay?"
+      ]
+    },
+    "308": {
+      "name": [
+        "The assay name is CEETOX_H295R_CORTISOL. Is this molecule effective to this assay?"
+      ]
+    },
+    "309": {
+      "name": [
+        "The assay name is CEETOX_H295R_DOC_dn. Is this molecule effective to this assay?"
+      ]
+    },
+    "310": {
+      "name": [
+        "The assay name is CEETOX_H295R_DOC. Is this molecule effective to this assay?"
+      ]
+    },
+    "311": {
+      "name": [
+        "The assay name is CEETOX_H295R_ESTRADIOL. Is this molecule effective to this assay?"
+      ]
+    },
+    "312": {
+      "name": [
+        "The assay name is CEETOX_H295R_ESTRADIOL. Is this molecule effective to this assay?"
+      ]
+    },
+    "313": {
+      "name": [
+        "The assay name is CEETOX_H295R_ESTRONE. Is this molecule effective to this assay?"
+      ]
+    },
+    "314": {
+      "name": [
+        "The assay name is CEETOX_H295R_ESTRONE. Is this molecule effective to this assay?"
+      ]
+    },
+    "315": {
+      "name": [
+        "The assay name is CEETOX_H295R_OHPREG. Is this molecule effective to this assay?"
+      ]
+    },
+    "316": {
+      "name": [
+        "The assay name is CEETOX_H295R_OHPROG. Is this molecule effective to this assay?"
+      ]
+    },
+    "317": {
+      "name": [
+        "The assay name is CEETOX_H295R_OHPROG. Is this molecule effective to this assay?"
+      ]
+    },
+    "318": {
+      "name": [
+        "The assay name is CEETOX_H295R_PROG. Is this molecule effective to this assay?"
+      ]
+    },
+    "319": {
+      "name": [
+        "The assay name is CEETOX_H295R_TESTO. Is this molecule effective to this assay?"
+      ]
+    },
+    "320": {
+      "name": [
+        "The assay name is CLD_ABCB1_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "321": {
+      "name": [
+        "The assay name is CLD_ABCG2_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "322": {
+      "name": [
+        "The assay name is CLD_CYP1A1_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "323": {
+      "name": [
+        "The assay name is CLD_CYP1A1_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "324": {
+      "name": [
+        "The assay name is CLD_CYP1A1_6hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "325": {
+      "name": [
+        "The assay name is CLD_CYP1A2_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "326": {
+      "name": [
+        "The assay name is CLD_CYP1A2_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "327": {
+      "name": [
+        "The assay name is CLD_CYP1A2_6hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "328": {
+      "name": [
+        "The assay name is CLD_CYP2B6_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "329": {
+      "name": [
+        "The assay name is CLD_CYP2B6_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "330": {
+      "name": [
+        "The assay name is CLD_CYP2B6_6hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "331": {
+      "name": [
+        "The assay name is CLD_CYP3A4_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "332": {
+      "name": [
+        "The assay name is CLD_CYP3A4_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "333": {
+      "name": [
+        "The assay name is CLD_CYP3A4_6hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "334": {
+      "name": [
+        "The assay name is CLD_GSTA2_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "335": {
+      "name": [
+        "The assay name is CLD_SULT2A_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "336": {
+      "name": [
+        "The assay name is CLD_SULT2A_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "337": {
+      "name": [
+        "The assay name is CLD_UGT1A1_24hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "338": {
+      "name": [
+        "The assay name is CLD_UGT1A1_48hr. Is this molecule effective to this assay?"
+      ]
+    },
+    "345": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP19A1. Is this molecule effective to this assay?"
+      ]
+    },
+    "346": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP1A1. Is this molecule effective to this assay?"
+      ]
+    },
+    "347": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP1A2. Is this molecule effective to this assay?"
+      ]
+    },
+    "348": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP2A6. Is this molecule effective to this assay?"
+      ]
+    },
+    "349": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP2B6. Is this molecule effective to this assay?"
+      ]
+    },
+    "350": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP2C19. Is this molecule effective to this assay?"
+      ]
+    },
+    "351": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP2C9. Is this molecule effective to this assay?"
+      ]
+    },
+    "352": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP2D6. Is this molecule effective to this assay?"
+      ]
+    },
+    "353": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP3A4. Is this molecule effective to this assay?"
+      ]
+    },
+    "354": {
+      "name": [
+        "The assay name is NVS_ADME_hCYP4F12. Is this molecule effective to this assay?"
+      ]
+    },
+    "355": {
+      "name": [
+        "The assay name is NVS_ADME_rCYP2C12. Is this molecule effective to this assay?"
+      ]
+    },
+    "356": {
+      "name": [
+        "The assay name is NVS_ENZ_hAChE. Is this molecule effective to this assay?"
+      ]
+    },
+    "357": {
+      "name": [
+        "The assay name is NVS_ENZ_hAMPKa1. Is this molecule effective to this assay?"
+      ]
+    },
+    "358": {
+      "name": [
+        "The assay name is NVS_ENZ_hAurA. Is this molecule effective to this assay?"
+      ]
+    },
+    "359": {
+      "name": [
+        "The assay name is NVS_ENZ_hBACE. Is this molecule effective to this assay?"
+      ]
+    },
+    "360": {
+      "name": [
+        "The assay name is NVS_ENZ_hCASP5. Is this molecule effective to this assay?"
+      ]
+    },
+    "361": {
+      "name": [
+        "The assay name is NVS_ENZ_hCK1D. Is this molecule effective to this assay?"
+      ]
+    },
+    "362": {
+      "name": [
+        "The assay name is NVS_ENZ_hDUSP3. Is this molecule effective to this assay?"
+      ]
+    },
+    "363": {
+      "name": [
+        "The assay name is NVS_ENZ_hES. Is this molecule effective to this assay?"
+      ]
+    },
+    "364": {
+      "name": [
+        "The assay name is NVS_ENZ_hElastase. Is this molecule effective to this assay?"
+      ]
+    },
+    "365": {
+      "name": [
+        "The assay name is NVS_ENZ_hFGFR1. Is this molecule effective to this assay?"
+      ]
+    },
+    "366": {
+      "name": [
+        "The assay name is NVS_ENZ_hGSK3b. Is this molecule effective to this assay?"
+      ]
+    },
+    "367": {
+      "name": [
+        "The assay name is NVS_ENZ_hMMP1. Is this molecule effective to this assay?"
+      ]
+    },
+    "368": {
+      "name": [
+        "The assay name is NVS_ENZ_hMMP13. Is this molecule effective to this assay?"
+      ]
+    },
+    "369": {
+      "name": [
+        "The assay name is NVS_ENZ_hMMP2. Is this molecule effective to this assay?"
+      ]
+    },
+    "370": {
+      "name": [
+        "The assay name is NVS_ENZ_hMMP3. Is this molecule effective to this assay?"
+      ]
+    },
+    "371": {
+      "name": [
+        "The assay name is NVS_ENZ_hMMP7. Is this molecule effective to this assay?"
+      ]
+    },
+    "372": {
+      "name": [
+        "The assay name is NVS_ENZ_hMMP9. Is this molecule effective to this assay?"
+      ]
+    },
+    "373": {
+      "name": [
+        "The assay name is NVS_ENZ_hPDE10. Is this molecule effective to this assay?"
+      ]
+    },
+    "374": {
+      "name": [
+        "The assay name is NVS_ENZ_hPDE4A1. Is this molecule effective to this assay?"
+      ]
+    },
+    "375": {
+      "name": [
+        "The assay name is NVS_ENZ_hPDE5. Is this molecule effective to this assay?"
+      ]
+    },
+    "376": {
+      "name": [
+        "The assay name is NVS_ENZ_hPI3Ka. Is this molecule effective to this assay?"
+      ]
+    },
+    "377": {
+      "name": [
+        "The assay name is NVS_ENZ_hPTEN. Is this molecule effective to this assay?"
+      ]
+    },
+    "378": {
+      "name": [
+        "The assay name is NVS_ENZ_hPTPN11. Is this molecule effective to this assay?"
+      ]
+    },
+    "379": {
+      "name": [
+        "The assay name is NVS_ENZ_hPTPN12. Is this molecule effective to this assay?"
+      ]
+    },
+    "380": {
+      "name": [
+        "The assay name is NVS_ENZ_hPTPN13. Is this molecule effective to this assay?"
+      ]
+    },
+    "381": {
+      "name": [
+        "The assay name is NVS_ENZ_hPTPN9. Is this molecule effective to this assay?"
+      ]
+    },
+    "382": {
+      "name": [
+        "The assay name is NVS_ENZ_hPTPRC. Is this molecule effective to this assay?"
+      ]
+    },
+    "383": {
+      "name": [
+        "The assay name is NVS_ENZ_hSIRT1. Is this molecule effective to this assay?"
+      ]
+    },
+    "384": {
+      "name": [
+        "The assay name is NVS_ENZ_hSIRT2. Is this molecule effective to this assay?"
+      ]
+    },
+    "385": {
+      "name": [
+        "The assay name is NVS_ENZ_hTrkA. Is this molecule effective to this assay?"
+      ]
+    },
+    "386": {
+      "name": [
+        "The assay name is NVS_ENZ_hVEGFR2. Is this molecule effective to this assay?"
+      ]
+    },
+    "387": {
+      "name": [
+        "The assay name is NVS_ENZ_oCOX1. Is this molecule effective to this assay?"
+      ]
+    },
+    "388": {
+      "name": [
+        "The assay name is NVS_ENZ_oCOX2. Is this molecule effective to this assay?"
+      ]
+    },
+    "389": {
+      "name": [
+        "The assay name is NVS_ENZ_rAChE. Is this molecule effective to this assay?"
+      ]
+    },
+    "390": {
+      "name": [
+        "The assay name is NVS_ENZ_rCNOS. Is this molecule effective to this assay?"
+      ]
+    },
+    "391": {
+      "name": [
+        "The assay name is NVS_ENZ_rMAOAC. Is this molecule effective to this assay?"
+      ]
+    },
+    "392": {
+      "name": [
+        "The assay name is NVS_ENZ_rMAOAP. Is this molecule effective to this assay?"
+      ]
+    },
+    "393": {
+      "name": [
+        "The assay name is NVS_ENZ_rMAOBC. Is this molecule effective to this assay?"
+      ]
+    },
+    "394": {
+      "name": [
+        "The assay name is NVS_ENZ_rMAOBP. Is this molecule effective to this assay?"
+      ]
+    },
+    "395": {
+      "name": [
+        "The assay name is NVS_ENZ_rabI2C. Is this molecule effective to this assay?"
+      ]
+    },
+    "396": {
+      "name": [
+        "The assay name is NVS_GPCR_bAdoR_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "397": {
+      "name": [
+        "The assay name is NVS_GPCR_bDR_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "398": {
+      "name": [
+        "The assay name is NVS_GPCR_g5HT4. Is this molecule effective to this assay?"
+      ]
+    },
+    "399": {
+      "name": [
+        "The assay name is NVS_GPCR_gH2. Is this molecule effective to this assay?"
+      ]
+    },
+    "400": {
+      "name": [
+        "The assay name is NVS_GPCR_gLTB4. Is this molecule effective to this assay?"
+      ]
+    },
+    "401": {
+      "name": [
+        "The assay name is NVS_GPCR_gLTD4. Is this molecule effective to this assay?"
+      ]
+    },
+    "402": {
+      "name": [
+        "The assay name is NVS_GPCR_gMPeripheral_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "403": {
+      "name": [
+        "The assay name is NVS_GPCR_gOpiateK. Is this molecule effective to this assay?"
+      ]
+    },
+    "404": {
+      "name": [
+        "The assay name is NVS_GPCR_h5HT2A. Is this molecule effective to this assay?"
+      ]
+    },
+    "405": {
+      "name": [
+        "The assay name is NVS_GPCR_h5HT5A. Is this molecule effective to this assay?"
+      ]
+    },
+    "406": {
+      "name": [
+        "The assay name is NVS_GPCR_h5HT6. Is this molecule effective to this assay?"
+      ]
+    },
+    "407": {
+      "name": [
+        "The assay name is NVS_GPCR_h5HT7. Is this molecule effective to this assay?"
+      ]
+    },
+    "408": {
+      "name": [
+        "The assay name is NVS_GPCR_hAT1. Is this molecule effective to this assay?"
+      ]
+    },
+    "409": {
+      "name": [
+        "The assay name is NVS_GPCR_hAdoRA1. Is this molecule effective to this assay?"
+      ]
+    },
+    "410": {
+      "name": [
+        "The assay name is NVS_GPCR_hAdoRA2a. Is this molecule effective to this assay?"
+      ]
+    },
+    "411": {
+      "name": [
+        "The assay name is NVS_GPCR_hAdra2A. Is this molecule effective to this assay?"
+      ]
+    },
+    "412": {
+      "name": [
+        "The assay name is NVS_GPCR_hAdra2C. Is this molecule effective to this assay?"
+      ]
+    },
+    "413": {
+      "name": [
+        "The assay name is NVS_GPCR_hAdrb1. Is this molecule effective to this assay?"
+      ]
+    },
+    "414": {
+      "name": [
+        "The assay name is NVS_GPCR_hAdrb2. Is this molecule effective to this assay?"
+      ]
+    },
+    "415": {
+      "name": [
+        "The assay name is NVS_GPCR_hAdrb3. Is this molecule effective to this assay?"
+      ]
+    },
+    "416": {
+      "name": [
+        "The assay name is NVS_GPCR_hDRD1. Is this molecule effective to this assay?"
+      ]
+    },
+    "417": {
+      "name": [
+        "The assay name is NVS_GPCR_hDRD2s. Is this molecule effective to this assay?"
+      ]
+    },
+    "418": {
+      "name": [
+        "The assay name is NVS_GPCR_hDRD4, 4. Is this molecule effective to this assay?"
+      ]
+    },
+    "419": {
+      "name": [
+        "The assay name is NVS_GPCR_hH1. Is this molecule effective to this assay?"
+      ]
+    },
+    "420": {
+      "name": [
+        "The assay name is NVS_GPCR_hLTB4_BLT1. Is this molecule effective to this assay?"
+      ]
+    },
+    "421": {
+      "name": [
+        "The assay name is NVS_GPCR_hM1. Is this molecule effective to this assay?"
+      ]
+    },
+    "422": {
+      "name": [
+        "The assay name is NVS_GPCR_hM2. Is this molecule effective to this assay?"
+      ]
+    },
+    "423": {
+      "name": [
+        "The assay name is NVS_GPCR_hM3. Is this molecule effective to this assay?"
+      ]
+    },
+    "424": {
+      "name": [
+        "The assay name is NVS_GPCR_hM4. Is this molecule effective to this assay?"
+      ]
+    },
+    "425": {
+      "name": [
+        "The assay name is NVS_GPCR_hNK2. Is this molecule effective to this assay?"
+      ]
+    },
+    "426": {
+      "name": [
+        "The assay name is NVS_GPCR_hOpiate_D1. Is this molecule effective to this assay?"
+      ]
+    },
+    "427": {
+      "name": [
+        "The assay name is NVS_GPCR_hOpiate_mu. Is this molecule effective to this assay?"
+      ]
+    },
+    "428": {
+      "name": [
+        "The assay name is NVS_GPCR_hTXA2. Is this molecule effective to this assay?"
+      ]
+    },
+    "429": {
+      "name": [
+        "The assay name is NVS_GPCR_p5HT2C. Is this molecule effective to this assay?"
+      ]
+    },
+    "430": {
+      "name": [
+        "The assay name is NVS_GPCR_r5HT1_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "431": {
+      "name": [
+        "The assay name is NVS_GPCR_r5HT_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "432": {
+      "name": [
+        "The assay name is NVS_GPCR_rAdra1B. Is this molecule effective to this assay?"
+      ]
+    },
+    "433": {
+      "name": [
+        "The assay name is NVS_GPCR_rAdra1_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "434": {
+      "name": [
+        "The assay name is NVS_GPCR_rAdra2_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "435": {
+      "name": [
+        "The assay name is NVS_GPCR_rAdrb_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "436": {
+      "name": [
+        "The assay name is NVS_GPCR_rNK1. Is this molecule effective to this assay?"
+      ]
+    },
+    "437": {
+      "name": [
+        "The assay name is NVS_GPCR_rNK3. Is this molecule effective to this assay?"
+      ]
+    },
+    "438": {
+      "name": [
+        "The assay name is NVS_GPCR_rOpiate_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "439": {
+      "name": [
+        "The assay name is NVS_GPCR_rOpiate_NonSelectiveNa. Is this molecule effective to this assay?"
+      ]
+    },
+    "440": {
+      "name": [
+        "The assay name is NVS_GPCR_rSST. Is this molecule effective to this assay?"
+      ]
+    },
+    "441": {
+      "name": [
+        "The assay name is NVS_GPCR_rTRH. Is this molecule effective to this assay?"
+      ]
+    },
+    "442": {
+      "name": [
+        "The assay name is NVS_GPCR_rV1. Is this molecule effective to this assay?"
+      ]
+    },
+    "443": {
+      "name": [
+        "The assay name is NVS_GPCR_rabPAF. Is this molecule effective to this assay?"
+      ]
+    },
+    "444": {
+      "name": [
+        "The assay name is NVS_GPCR_rmAdra2B. Is this molecule effective to this assay?"
+      ]
+    },
+    "445": {
+      "name": [
+        "The assay name is NVS_IC_hKhERGCh. Is this molecule effective to this assay?"
+      ]
+    },
+    "446": {
+      "name": [
+        "The assay name is NVS_IC_rCaBTZCHL. Is this molecule effective to this assay?"
+      ]
+    },
+    "447": {
+      "name": [
+        "The assay name is NVS_IC_rCaDHPRCh_L. Is this molecule effective to this assay?"
+      ]
+    },
+    "448": {
+      "name": [
+        "The assay name is NVS_IC_rNaCh_site2. Is this molecule effective to this assay?"
+      ]
+    },
+    "449": {
+      "name": [
+        "The assay name is NVS_LGIC_bGABARa1. Is this molecule effective to this assay?"
+      ]
+    },
+    "450": {
+      "name": [
+        "The assay name is NVS_LGIC_h5HT3. Is this molecule effective to this assay?"
+      ]
+    },
+    "451": {
+      "name": [
+        "The assay name is NVS_LGIC_hNNR_NBungSens. Is this molecule effective to this assay?"
+      ]
+    },
+    "452": {
+      "name": [
+        "The assay name is NVS_LGIC_rGABAR_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "453": {
+      "name": [
+        "The assay name is NVS_LGIC_rNNR_BungSens. Is this molecule effective to this assay?"
+      ]
+    },
+    "454": {
+      "name": [
+        "The assay name is NVS_MP_hPBR. Is this molecule effective to this assay?"
+      ]
+    },
+    "455": {
+      "name": [
+        "The assay name is NVS_MP_rPBR. Is this molecule effective to this assay?"
+      ]
+    },
+    "456": {
+      "name": [
+        "The assay name is NVS_NR_bER. Is this molecule effective to this assay?"
+      ]
+    },
+    "457": {
+      "name": [
+        "The assay name is NVS_NR_bPR. Is this molecule effective to this assay?"
+      ]
+    },
+    "458": {
+      "name": [
+        "The assay name is NVS_NR_cAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "459": {
+      "name": [
+        "The assay name is NVS_NR_hAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "460": {
+      "name": [
+        "The assay name is NVS_NR_hCAR_Antagonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "461": {
+      "name": [
+        "The assay name is NVS_NR_hER. Is this molecule effective to this assay?"
+      ]
+    },
+    "462": {
+      "name": [
+        "The assay name is NVS_NR_hFXR_Agonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "463": {
+      "name": [
+        "The assay name is NVS_NR_hFXR_Antagonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "464": {
+      "name": [
+        "The assay name is NVS_NR_hGR. Is this molecule effective to this assay?"
+      ]
+    },
+    "465": {
+      "name": [
+        "The assay name is NVS_NR_hPPARa. Is this molecule effective to this assay?"
+      ]
+    },
+    "466": {
+      "name": [
+        "The assay name is NVS_NR_hPPARg. Is this molecule effective to this assay?"
+      ]
+    },
+    "467": {
+      "name": [
+        "The assay name is NVS_NR_hPR. Is this molecule effective to this assay?"
+      ]
+    },
+    "468": {
+      "name": [
+        "The assay name is NVS_NR_hPXR. Is this molecule effective to this assay?"
+      ]
+    },
+    "469": {
+      "name": [
+        "The assay name is NVS_NR_hRAR_Antagonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "470": {
+      "name": [
+        "The assay name is NVS_NR_hRARa_Agonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "471": {
+      "name": [
+        "The assay name is NVS_NR_hTRa_Antagonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "472": {
+      "name": [
+        "The assay name is NVS_NR_mERa. Is this molecule effective to this assay?"
+      ]
+    },
+    "473": {
+      "name": [
+        "The assay name is NVS_NR_rAR. Is this molecule effective to this assay?"
+      ]
+    },
+    "474": {
+      "name": [
+        "The assay name is NVS_NR_rMR. Is this molecule effective to this assay?"
+      ]
+    },
+    "475": {
+      "name": [
+        "The assay name is NVS_OR_gSIGMA_NonSelective. Is this molecule effective to this assay?"
+      ]
+    },
+    "476": {
+      "name": [
+        "The assay name is NVS_TR_gDAT. Is this molecule effective to this assay?"
+      ]
+    },
+    "477": {
+      "name": [
+        "The assay name is NVS_TR_hAdoT. Is this molecule effective to this assay?"
+      ]
+    },
+    "478": {
+      "name": [
+        "The assay name is NVS_TR_hDAT. Is this molecule effective to this assay?"
+      ]
+    },
+    "479": {
+      "name": [
+        "The assay name is NVS_TR_hNET. Is this molecule effective to this assay?"
+      ]
+    },
+    "480": {
+      "name": [
+        "The assay name is NVS_TR_hSERT. Is this molecule effective to this assay?"
+      ]
+    },
+    "481": {
+      "name": [
+        "The assay name is NVS_TR_rNET. Is this molecule effective to this assay?"
+      ]
+    },
+    "482": {
+      "name": [
+        "The assay name is NVS_TR_rSERT. Is this molecule effective to this assay?"
+      ]
+    },
+    "483": {
+      "name": [
+        "The assay name is NVS_TR_rVMAT2. Is this molecule effective to this assay?"
+      ]
+    },
+    "484": {
+      "name": [
+        "The assay name is OT_AR_ARELUC_AG_1440. Is this molecule effective to this assay?"
+      ]
+    },
+    "485": {
+      "name": [
+        "The assay name is OT_AR_ARSRC1_0480. Is this molecule effective to this assay?"
+      ]
+    },
+    "486": {
+      "name": [
+        "The assay name is OT_AR_ARSRC1_0960. Is this molecule effective to this assay?"
+      ]
+    },
+    "487": {
+      "name": [
+        "The assay name is OT_ER_ERaERa_0480. Is this molecule effective to this assay?"
+      ]
+    },
+    "488": {
+      "name": [
+        "The assay name is OT_ER_ERaERa_1440. Is this molecule effective to this assay?"
+      ]
+    },
+    "489": {
+      "name": [
+        "The assay name is OT_ER_ERaERb_0480. Is this molecule effective to this assay?"
+      ]
+    },
+    "490": {
+      "name": [
+        "The assay name is OT_ER_ERaERb_1440. Is this molecule effective to this assay?"
+      ]
+    },
+    "491": {
+      "name": [
+        "The assay name is OT_ER_ERbERb_0480. Is this molecule effective to this assay?"
+      ]
+    },
+    "492": {
+      "name": [
+        "The assay name is OT_ER_ERbERb_1440. Is this molecule effective to this assay?"
+      ]
+    },
+    "493": {
+      "name": [
+        "The assay name is OT_ERa_EREGFP_0120. Is this molecule effective to this assay?"
+      ]
+    },
+    "494": {
+      "name": [
+        "The assay name is OT_ERa_GFPERaERE_0480. Is this molecule effective to this assay?"
+      ]
+    },
+    "495": {
+      "name": [
+        "The assay name is OT_FXR_FXRSRC1_0480. Is this molecule effective to this assay?"
+      ]
+    },
+    "496": {
+      "name": [
+        "The assay name is OT_FXR_FXRSRC1_1440. Is this molecule effective to this assay?"
+      ]
+    },
+    "497": {
+      "name": [
+        "The assay name is OT_NURR1_NURR1RXRa_0480. Is this molecule effective to this assay?"
+      ]
+    },
+    "498": {
+      "name": [
+        "The assay name is OT_NURR1_NURR1RXRa_1440. Is this molecule effective to this assay?"
+      ]
+    },
+    "499": {
+      "name": [
+        "The assay name is TOX21_ARE_BLA_Agonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "500": {
+      "name": [
+        "The assay name is TOX21_ARE_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "501": {
+      "name": [
+        "The assay name is TOX21_ARE_BLA_Agonist_ratio.   Is this molecule effective to this assay?"
+      ]
+    },
+    "502": {
+      "name": [
+        "The assay name is TOX21_ARE_BLA_Agonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "503": {
+      "name": [
+        "The assay name is TOX21_AR_BLA_Agonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "504": {
+      "name": [
+        "The assay name is TOX21_AR_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "505": {
+      "name": [
+        "The assay name is TOX21_AR_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "506": {
+      "name": [
+        "The assay name is TOX21_AR_BLA_Antagonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "507": {
+      "name": [
+        "The assay name is TOX21_AR_BLA_Antagonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "508": {
+      "name": [
+        "The assay name is TOX21_AR_BLA_Antagonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "509": {
+      "name": [
+        "The assay name is TOX21_AR_BLA_Antagonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "510": {
+      "name": [
+        "The assay name is TOX21_AR_LUC_MDAKB2_Agonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "513": {
+      "name": [
+        "The assay name is TOX21_AhR_LUC_Agonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "514": {
+      "name": [
+        "The assay name is TOX21_Aromatase_Inhibition. Is this molecule effective to this assay?"
+      ]
+    },
+    "515": {
+      "name": [
+        "The assay name is TOX21_AutoFluor_HEK293_Cell_blue. Is this molecule effective to this assay?"
+      ]
+    },
+    "516": {
+      "name": [
+        "The assay name is TOX21_AutoFluor_HEK293_Media_blue. Is this molecule effective to this assay?"
+      ]
+    },
+    "517": {
+      "name": [
+        "The assay name is TOX21_AutoFluor_HEPG2_Cell_blue. Is this molecule effective to this assay?"
+      ]
+    },
+    "518": {
+      "name": [
+        "The assay name is TOX21_AutoFluor_HEPG2_Cell_green. Is this molecule effective to this assay?"
+      ]
+    },
+    "519": {
+      "name": [
+        "The assay name is TOX21_AutoFluor_HEPG2_Media_blue. Is this molecule effective to this assay?"
+      ]
+    },
+    "520": {
+      "name": [
+        "The assay name is TOX21_AutoFluor_HEPG2_Media_green. Is this molecule effective to this assay?"
+      ]
+    },
+    "521": {
+      "name": [
+        "The assay name is TOX21_ELG1_LUC_Agonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "522": {
+      "name": [
+        "The assay name is TOX21_ERa_BLA_Agonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "523": {
+      "name": [
+        "The assay name is TOX21_ERa_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "524": {
+      "name": [
+        "The assay name is TOX21_ERa_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "525": {
+      "name": [
+        "The assay name is TOX21_ERa_BLA_Antagonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "526": {
+      "name": [
+        "The assay name is TOX21_ERa_BLA_Antagonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "527": {
+      "name": [
+        "The assay name is TOX21_ERa_BLA_Antagonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "528": {
+      "name": [
+        "The assay name is TOX21_ERa_BLA_Antagonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "531": {
+      "name": [
+        "The assay name is TOX21_ESRE_BLA_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "532": {
+      "name": [
+        "The assay name is TOX21_ESRE_BLA_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "533": {
+      "name": [
+        "The assay name is TOX21_ESRE_BLA_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "534": {
+      "name": [
+        "The assay name is TOX21_ESRE_BLA_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "535": {
+      "name": [
+        "The assay name is TOX21_FXR_BLA_Antagonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "536": {
+      "name": [
+        "The assay name is TOX21_FXR_BLA_Antagonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "537": {
+      "name": [
+        "The assay name is TOX21_FXR_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "538": {
+      "name": [
+        "The assay name is TOX21_FXR_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "539": {
+      "name": [
+        "The assay name is TOX21_FXR_BLA_Antagonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "540": {
+      "name": [
+        "The assay name is TOX21_FXR_BLA_Antagonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "541": {
+      "name": [
+        "The assay name is TOX21_GR_BLA_Agonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "542": {
+      "name": [
+        "The assay name is TOX21_GR_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "543": {
+      "name": [
+        "The assay name is TOX21_GR_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "544": {
+      "name": [
+        "The assay name is TOX21_GR_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "545": {
+      "name": [
+        "The assay name is TOX21_GR_BLA_Antagonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "546": {
+      "name": [
+        "The assay name is TOX21_GR_BLA_Antagonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "547": {
+      "name": [
+        "The assay name is TOX21_HSE_BLA_Agonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "548": {
+      "name": [
+        "The assay name is TOX21_HSE_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "549": {
+      "name": [
+        "The assay name is TOX21_HSE_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "550": {
+      "name": [
+        "The assay name is TOX21_HSE_BLA_Agonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "551": {
+      "name": [
+        "The assay name is TOX21_MMP_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "552": {
+      "name": [
+        "The assay name is TOX21_MMP_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "553": {
+      "name": [
+        "The assay name is TOX21_MMP_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "554": {
+      "name": [
+        "The assay name is TOX21_NFkB_BLA_Agonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "555": {
+      "name": [
+        "The assay name is TOX21_NFkB_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "556": {
+      "name": [
+        "The assay name is TOX21_NFkB_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "557": {
+      "name": [
+        "The assay name is TOX21_NFkB_BLA_Agonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "558": {
+      "name": [
+        "The assay name is TOX21_PPARd_BLA_Agonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "559": {
+      "name": [
+        "The assay name is TOX21_PPARd_BLA_Antagonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "560": {
+      "name": [
+        "The assay name is TOX21_PPARd_BLA_Agonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "561": {
+      "name": [
+        "The assay name is TOX21_PPARd_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "562": {
+      "name": [
+        "The assay name is TOX21_PPARd_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "563": {
+      "name": [
+        "The assay name is TOX21_PPARd_BLA_Antagonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "564": {
+      "name": [
+        "The assay name is TOX21_PPARd_BLA_Antagonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "565": {
+      "name": [
+        "The assay name is TOX21_PPARg_BLA_Agonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "566": {
+      "name": [
+        "The assay name is TOX21_PPARg_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "567": {
+      "name": [
+        "The assay name is TOX21_PPARg_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "568": {
+      "name": [
+        "The assay name is TOX21_PPARg_BLA_Antagonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "569": {
+      "name": [
+        "The assay name is TOX21_PPARg_BLA_Antagonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "570": {
+      "name": [
+        "The assay name is TOX21_PPARg_BLA_Antagonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "571": {
+      "name": [
+        "The assay name is TOX21_TR_LUC_GH3_Agonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "572": {
+      "name": [
+        "The assay name is TOX21_TR_LUC_GH3_Antagonist. Is this molecule effective to this assay?"
+      ]
+    },
+    "573": {
+      "name": [
+        "The assay name is TOX21_VDR_BLA_Agonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "574": {
+      "name": [
+        "The assay name is TOX21_VDR_BLA_Antagonist_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "575": {
+      "name": [
+        "The assay name is TOX21_VDR_BLA_Agonist_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "576": {
+      "name": [
+        "The assay name is TOX21_VDR_BLA_Agonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "577": {
+      "name": [
+        "The assay name is TOX21_VDR_BLA_Antagonist_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "578": {
+      "name": [
+        "The assay name is TOX21_VDR_BLA_Antagonist_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "579": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p1_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "580": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p1_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "581": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p1_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "582": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p1_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "583": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p2_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "584": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p2_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "585": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p2_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "586": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p2_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "587": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p3_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "588": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p3_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "589": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p3_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "590": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p3_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "591": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p4_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "592": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p4_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "593": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p4_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "594": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p4_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "595": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p5_ch1. Is this molecule effective to this assay?"
+      ]
+    },
+    "596": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p5_ch2. Is this molecule effective to this assay?"
+      ]
+    },
+    "597": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p5_ratio. Is this molecule effective to this assay?"
+      ]
+    },
+    "598": {
+      "name": [
+        "The assay name is TOX21_p53_BLA_p5_viability. Is this molecule effective to this assay?"
+      ]
+    },
+    "599": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_AXIS. Is this molecule effective to this assay?"
+      ]
+    },
+    "600": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_ActivityScore. Is this molecule effective to this assay?"
+      ]
+    },
+    "601": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_BRAI. Is this molecule effective to this assay?"
+      ]
+    },
+    "602": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_CFIN. Is this molecule effective to this assay?"
+      ]
+    },
+    "603": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_CIRC. Is this molecule effective to this assay?"
+      ]
+    },
+    "604": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_EYE. Is this molecule effective to this assay?"
+      ]
+    },
+    "605": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_JAW. Is this molecule effective to this assay?"
+      ]
+    },
+    "606": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_Mort. Is this molecule effective to this assay?"
+      ]
+    },
+    "607": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_OTIC. Is this molecule effective to this assay?"
+      ]
+    },
+    "608": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_PE. Is this molecule effective to this assay?"
+      ]
+    },
+    "609": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_PFIN. Is this molecule effective to this assay?"
+      ]
+    },
+    "610": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_PIG. Is this molecule effective to this assay?"
+      ]
+    },
+    "611": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_SNOU. Is this molecule effective to this assay?"
+      ]
+    },
+    "612": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_SOMI. Is this molecule effective to this assay?"
+      ]
+    },
+    "613": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_SWIM. Is this molecule effective to this assay?"
+      ]
+    },
+    "614": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_TRUN. Is this molecule effective to this assay?"
+      ]
+    },
+    "615": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_TR. Is this molecule effective to this assay?"
+      ]
+    },
+    "616": {
+      "name": [
+        "The assay name is Tanguay_ZF_120hpf_YSE. Is this molecule effective to this assay?"
+      ]
+    }
+  },
+  "sider": {
+    "name": [
+      "The assay name is The Side Effect Resource (SIDER)."
+    ]
+  },
+  "clintox": {
+    "0": {
+      "name": [
+        "The assay name is Is this molecule not a drug?.",
+        "The assay name is Is this molecule not clinical applable? Assay name: Clinical Applicability of Molecule.",
+        "The assay name is \"Toxicity Assay\".",
+        "The assay name is \"Toxicity Assay\".",
+        "The assay name is Toxicity assay.",
+        "The assay name is Toxicology assessment.",
+        "The assay name is Toxicity assay.",
+        "The assay name is \"Drug toxicity assessment\".",
+        "The assay name is \"Toxicity vs. Medicinal Value\"."
+      ]
+    },
+    "1": {
+      "name": [
+        "The assay name is FDA Approval of a Drug. Is this molecule a drug approved by FDA?",
+        "The assay name is New Drug Approval Process. Is this molecule a drug approved by FDA?",
+        "The assay name is Drugs on the Market Approved by FDA. Is this drug approved by FDA?",
+        "The assay name is Is this molecule approved by FDA as drug?.",
+        "The assay name is Is this drug approved by FDA?.",
+        "The assay name is Is this molecule a drug approved by FDA?.",
+        "The assay name is \"FDA approval assay\"."
+      ]
+    }
+  },
+  "esol": {
+    "0": {
+      "name": [
+        "The assay name is Solubility assay. What is the solubility of this molecule?",
+        "The assay name is Solubility assay. What is the logS of this molecule?",
+        "The assay name is Solubility assay. Can you approximate the logS of this molecule by its negative logP and MPt?"
+      ]
+    }
+  },
+  "freesolv": {
+    "0": {
+      "name": [
+        "The assay name is \u0394G_hyd assay. Can you tell me the free energy of hydration (by using the negative pka) of this molecule, predicted by using \u0394G_solv and negative pka?",
+        "The assay name is \u0394G_hyd approximation. What is the free energy of hydration (by using the negative pka) of this molecule?",
+        "The assay name is The free energy of hydration (\u0394\u03bch). What is the free energy of hydration (\u0394\u03bch) of this molecule?"
+      ]
+    }
+  },
+  "lipo": {
+    "0": {
+      "name": [
+        "The assay name is Lipophilicity.4) of this molecule?"
+      ]
+    }
+  },
+  "muv": {
+    "0": {
+      "name": [
+        "The assay name is Protein kinase A (PKA). Is this molecule inhibitor of PKA?",
+        "The assay name is PKA. Can this molecule inhibite PKA?",
+        "The assay name is Protein kinase A (PKA). Is this molecule effective to PKA?",
+        "The assay name is Protein kinase A (PKA). Is this molecule effective to this assay?"
+      ]
+    },
+    "1": {
+      "name": [
+        "The assay name is SF-1. Is this molecule inhibitor of SF-1?",
+        "The assay name is SF-1. Can this molecule inhibite SF-1?",
+        "The assay name is SF-1. Is this molecule effective to SF-1?",
+        "The assay name is SF-1. Is this molecule effective to this assay?"
+      ]
+    },
+    "2": {
+      "name": [
+        "The assay name is Rho-Kinase (Rock2). Is this molecule inhibitor of Rock2?",
+        "The assay name is Rho-Kinase (Rock2). Can this molecule inhibite Rock2?",
+        "The assay name is Rho-Kinase (Rock2). Is this molecule effective to Rock2?",
+        "The assay name is Rho-Kinase. Is this molecule effective to this assay?"
+      ]
+    },
+    "3": {
+      "name": [
+        "The assay name is HIV-1 RT. Is this molecule inhibitor of HIV-1 RT RNase H?",
+        "The assay name is HIV-1 RT. Is this molecule effective to HIV-1 RT RNase H?",
+        "The assay name is HIV-1 RT. Is this molecule effective to this assay?"
+      ]
+    },
+    "4": {
+      "name": [
+        "The assay name is EphA4. Is this molecule inhibitor of EphA4?",
+        "The assay name is EphA4. Can this molecule inhibite EphA4?",
+        "The assay name is EphA4. Is this molecule effective to EphA4?",
+        "The assay name is EphA4. Can this molecule inhibite EphA4?",
+        "The assay name is EphA4. Can this molecule inhibite EphA4?",
+        "The assay name is EphA4. Is this molecule inhibitor of EphA4?",
+        "The assay name is EphA4. Is this molecule effective to this assay?"
+      ]
+    },
+    "5": {
+      "name": [
+        "The assay name is SF-1. Is this molecule activators of SF-1?",
+        "The assay name is SF-1. Can this molecule activate SF-1?",
+        "The assay name is SF-1. Is this molecule effective to SF-1?",
+        "The assay name is SF-1. Is this molecule effective to this assay?"
+      ]
+    },
+    "6": {
+      "name": [
+        "The assay name is Hsp90. Is this molecule inhibitor of Hsp90?",
+        "The assay name is Hsp90. Can this molecule inhibite Hsp90?",
+        "The assay name is Hsp90. Is this molecule effective to Hsp90?",
+        "The assay name is Hsp90. Is this molecule effective to this assay?"
+      ]
+    },
+    "7": {
+      "name": [
+        "The assay name is Hydrophobic groove. Is this molecule inhibitor of ER-alpha?",
+        "The assay name is hydrophobic groove. Can this molecule inhibite ER-alpha?",
+        "The assay name is Hydrophobic groove. Is this molecule effective to ER-alpha?",
+        "The assay name is hydrophobic groove. Is this molecule effective to this assay?"
+      ]
+    },
+    "8": {
+      "name": [
+        "The assay name is ER-beta. Is this molecule inhibitor of ER-beta?",
+        "The assay name is ER-beta. Can this molecule inhibite ER-beta?",
+        "The assay name is ER-beta. Is this molecule effective to ER-beta?",
+        "The assay name is ER-beta. Is this molecule effective to this assay?"
+      ]
+    },
+    "9": {
+      "name": [
+        "The assay name is ER-alpha. Is this molecule potentiator to ER-alpha?",
+        "The assay name is ER-alpha binding assay. Is this molecule potentiator to ER-alpha?",
+        "The assay name is ER-alpha. Is this molecule effective to ER-alpha?",
+        "The assay name is Cy5-labeled SRC-1 peptide. Is this molecule effective to this assay?"
+      ]
+    },
+    "10": {
+      "name": [
+        "The assay name is FAK. Is this molecule inhibitor of FAK?",
+        "The assay name is Focal adhesion kinase (FAK). Can this molecule inhibite FAK?",
+        "The assay name is Focal adhesion kinase (FAK). Is this molecule effective to FAK?",
+        "The assay name is FAK. Is this molecule inhibitor of FAK?",
+        "The assay name is FAK. Is this molecule inhibitor of FAK?",
+        "The assay name is FAK. Is this molecule inhibitor of FAK?",
+        "The assay name is FAK. Is this molecule effective to this assay?"
+      ]
+    },
+    "11": {
+      "name": [
+        "The assay name is Cathepsin G. Is this molecule inhibitor of Cathepsin G?",
+        "The assay name is Cathepsin G. Can this molecule inhibite Cathepsin G?",
+        "The assay name is Cathepsin G. Is this molecule effective to Cathepsin G?",
+        "The assay name is Cathepsin G. Is this molecule effective to this assay?"
+      ]
+    },
+    "12": {
+      "name": [
+        "The assay name is FXIa. Is this molecule inhibitor of FXIa?",
+        "The assay name is Factor XIa. Can this molecule inhibite FXIa?",
+        "The assay name is FXIa. Is this molecule effective to FXIa?",
+        "The assay name is Factor XIa. Is this molecule effective to this assay?"
+      ]
+    },
+    "13": {
+      "name": [
+        "The assay name is S1P receptor 2 (S1P2). Is this molecule inhibitor of S1P2?",
+        "The assay name is S1P receptor 2 (S1P2). Can this molecule inhibite S1P2?",
+        "The assay name is S1P receptor 2 (S1P2). Is this molecule effective to S1P2?",
+        "The assay name is S1P receptor 2. Is this molecule effective to this assay?"
+      ]
+    },
+    "14": {
+      "name": [
+        "The assay name is Factor XII (FXII). Is this molecule inhibitor of FXII?",
+        "The assay name is Factor XII. Can this molecule inhibite FXII?",
+        "The assay name is Factor XII (FXII). Is this molecule effective to FXII?",
+        "The assay name is Factor XII (FXII). Is this molecule effective to this assay?"
+      ]
+    },
+    "15": {
+      "name": [
+        "The assay name is D1 receptors. Is this molecule allosteric modulators of D1 receptors?",
+        "The assay name is D1 receptors. Is this molecule effective to this assay?"
+      ]
+    },
+    "16": {
+      "name": [
+        "The assay name is M1 muscarinic receptor. Is this molecule allosteric modulators of M1 muscarinic receptors?",
+        "The assay name is M1 muscarinic receptor. Is this molecule effective to this assay?"
+      ]
+    }
+  },
+  "hiv": {
+    "0": {
+      "name": [
+        "The assay name is Human immunodeficiency viruses (HIV) protease inhibitor. Is this molecule effective to this assay?",
+        "The assay name is Human immunodeficiency viruses (HIV). Is this molecule effective to this assay?",
+        "The assay name is Human immunodeficiency viruses (HIV).  Is this molecule effective to this assay?",
+        "The assay name is Human immunodeficiency viruses (HIV).  Is this molecule effective to this assay?",
+        "The assay name is Human immunodeficiency viruses (HIV)/AIDS. Can this molecule inhibit HIV replication?",
+        "The assay name is Human immunodeficiency viruses (HIV). Is this molecule effective for inhibiting Human immunodeficiency viruses (HIV) replication?",
+        "The assay name is Human immunodeficiency viruses (HIV).  Is this molecule effective for inhibiting Human immunodeficiency viruses (HIV) replication?",
+        "The assay name is Human immunodeficiency viruses (HIV).  Is this molecule effective for inhibiting Human immunodeficiency viruses (HIV) replication?"
+      ]
+    }
+  },
+  "bace": {
+    "0": {
+      "name": [
+        "The assay name is Beta-secretase (BACE1). Is this molecule effective to the assay?",
+        "The assay name is Beta-secretase (BACE1). Is this molecule effective to the assay?",
+        "The assay name is Beta-secretase (BACE1). Can this molecule bind to BACE1?",
+        "The assay name is Beta-secretase (BACE1) protein. Is this molecule effective to the assay?",
+        "The assay name is Beta-secretase (BACE1) protein. Is this molecule effective to the assay?",
+        "The assay name is Beta-secretase (BACE1). Is this molecule effective to the assay?",
+        "The assay name is Beta-secretase (BACE1). Can this molecule bind to BACE1?"
+      ]
+    }
+  },
+  "bbbp": {
+    "0": {
+      "name": [
+        "The assay name is Brain blood barrier assay. Can this molecule pass brain blood barrier?",
+        "The assay name is Brain Blood Barrier. Can this molecule pass brain blood barrier?",
+        "The assay name is brain blood barrier assay. Can this molecule pass brain blood barrier?",
+        "The assay name is brain blood barrier assay. Can this molecule pass brain blood barrier?",
+        "The assay name is Brain blood barrier. Can this molecule pass brain blood barrier?"
+      ]
+    }
+  },
+  "tox21": {
+    "0": {
+      "name": [
+        "The assay name is Estrogen receptor alpha (ER alpha). Is this molecule agonists of the estrogen receptor alpha (ER-alpha) signaling pathway?",
+        "The assay name is Estrogen receptor alpha (ER alpha). Is this molecule toxic to the estrogen receptor alpha (ER-alpha) signaling pathway?",
+        "The assay name is Estrogen receptor alpha (ER alpha). Is this molecule effective to this assay?"
+      ]
+    },
+    "1": {
+      "name": [
+        "The assay name is Estrogen receptor alpha (ER alpha). Is this molecule agonists of the estrogen receptor alpha (ER-alpha) signaling pathway?",
+        "The assay name is Estrogen receptor alpha (ER alpha). Is this molecule toxic to the estrogen receptor alpha (ER-alpha) signaling pathway?",
+        "The assay name is Estrogen receptor alpha (ER alpha). Testing on the BG1 cell line, is this molecule agonists of the estrogen receptor alpha (ER-alpha) signaling pathway?",
+        "The assay name is Estrogen receptor alpha (ER alpha). Testing on the BG1 cell line, is this molecule toxic to the estrogen receptor alpha (ER-alpha) signaling pathway?",
+        "The assay name is ER alpha. Is this molecule effective to this assay?"
+      ]
+    },
+    "2": {
+      "name": [
+        "The assay name is Aromatase. Can this molecule inhibite Aromatase?",
+        "The assay name is Aromatase. Is this molecule toxic to Aromatase?",
+        "The assay name is Aromatase. Is this molecule effective to this assay?"
+      ]
+    },
+    "3": {
+      "name": [
+        "The assay name is Aryl hydrocarbon receptor. Can this molecule activate Aryl hydrocarbon receptor?",
+        "The assay name is Aryl hydrocarbon receptor. Is this molecule toxic to Aryl hydrocarbon receptor?",
+        "The assay name is Aryl hydrocarbon receptor. Is this molecule effective to this assay?"
+      ]
+    },
+    "4": {
+      "name": [
+        "The assay name is Androgen receptor (AR). On the MDA cell, is this molecule agonists of the androgen receptor (AR) signaling pathway?",
+        "The assay name is Androgen receptor (AR). On the MDA cell, is this molecule toxic to the androgen receptor (AR) signaling pathway?",
+        "The assay name is Androgen receptor (AR). Is this molecule effective to this assay?"
+      ]
+    },
+    "5": {
+      "name": [
+        "The assay name is Androgen receptor (AR). Is this molecule agonists of the androgen receptor (AR) signaling pathway?",
+        "The assay name is Androgen receptor (AR). Is this molecule toxic to the androgen receptor (AR) signaling pathway?",
+        "The assay name is Androgen receptor (AR). Is this molecule effective to this assay?"
+      ]
+    },
+    "6": {
+      "name": [
+        "The assay name is PPARs. Is this molecule agonists of the peroxisome proliferator-activated receptor gamma (PPARg) signaling pathway?",
+        "The assay name is PPAR-gamma. Is this molecule toxic to the peroxisome proliferator-activated receptor gamma (PPARg) signaling pathway?",
+        "The assay name is PPAR-gamma. Is this molecule effective to this assay?"
+      ]
+    },
+    "7": {
+      "name": [
+        "The assay name is Antioxidant response element (ARE) signaling pathway. Is this molecule agonists of antioxidant response element (ARE) signaling pathway?",
+        "The assay name is Antioxidant response element (ARE). Is this molecule toxic to antioxidant response element (ARE) signaling pathway?",
+        "The assay name is Antioxidant response element (ARE) signaling pathway. Is this molecule effective to this assay?"
+      ]
+    },
+    "8": {
+      "name": [
+        "The assay name is HSFs. Is this molecule activators of the heat shock response signaling pathway?",
+        "The assay name is HSF-1, -2, and -4. Is this molecule toxic to the heat shock response signaling pathway?",
+        "The assay name is HSF-1, -2, and -4. Is this molecule toxic to the heat shock response signaling pathway?"
+      ]
+    },
+    "9": {
+      "name": [
+        "The assay name is ELG1. Is this molecule effective to this assay?"
+      ]
+    },
+    "10": {
+      "name": [
+        "The assay name is Mitochondrial membrane potential (MMP). Can this molecule disrupts the mitochondrial membrane potential?",
+        "The assay name is Mitochondrial membrane potential (MMP). Is this molecule toxic by disrupting the mitochondrial membrane potential?",
+        "The assay name is Mitochondrial membrane potential (MMP). Is this molecule effective to this assay?"
+      ]
+    },
+    "11": {
+      "name": [
+        "The assay name is p53. Is this molecule agonists of the p53 signaling pathway?",
+        "The assay name is p53. Is this molecule effective to this assay?"
+      ]
+    }
+  },
+  "cyp450": {
+    "0": {
+      "name": [
+        "The assay name is CYP450 inhibition (CYP1A2). Is this molecule effective to this assay?"
+      ]
+    },
+    "1": {
+      "name": [
+        "The assay name is CYP450 inhibition (CYP2C9). Is this molecule effective to this assay?"
+      ]
+    },
+    "2": {
+      "name": [
+        "The assay name is CYP450 (CYP2C19). Is this molecule effective to this assay?"
+      ]
+    },
+    "3": {
+      "name": [
+        "The assay name is CYP450 inhibition (CYP2D6). Is this molecule effective to this assay?"
+      ]
+    },
+    "4": {
+      "name": [
+        "The assay name is CYP450 inhibition (CYP3A4). Is this molecule effective to this assay?"
+      ]
+    }
+  }
+}
