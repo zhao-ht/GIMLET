@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from model.gin_model import GNN
+from model.MoMu.model.gin_model import GNN
 from .bert import TextEncoder
 import torch.nn.functional as F
 import pytorch_lightning as pl

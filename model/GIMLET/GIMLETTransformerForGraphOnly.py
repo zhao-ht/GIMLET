@@ -1,20 +1,12 @@
 import torch
 import torch.nn as nn
-from torch.utils.checkpoint import checkpoint
-from transformers import T5Model, T5ForConditionalGeneration
-from transformers.modeling_outputs import BaseModelOutput
-from transformers.models.t5.modeling_t5 import T5Stack
-from model.molecule_gnn_model import GNN
+from transformers import T5ForConditionalGeneration
 import warnings
-from torch.nn import CrossEntropyLoss
 from transformers.utils import logging
 from transformers.modeling_outputs import (
     BaseModelOutput,
-    BaseModelOutputWithPastAndCrossAttentions,
-    Seq2SeqLMOutput,
-    Seq2SeqModelOutput,
 )
-from .GraphT5EncoderStack import GraphormerT5EncoderStackCoAttention
+from model.GIMLET.GIMLETEncoderStack import GraphormerT5EncoderStackCoAttention
 from transformers.modeling_outputs import SequenceClassifierOutput
 from torch.nn import BCEWithLogitsLoss, CrossEntropyLoss, MSELoss
 

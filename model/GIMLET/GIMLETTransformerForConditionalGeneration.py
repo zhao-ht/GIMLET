@@ -1,20 +1,13 @@
 import torch
-import torch.nn as nn
-from torch.utils.checkpoint import checkpoint
-from transformers import T5Model, T5ForConditionalGeneration
-from transformers.modeling_outputs import BaseModelOutput
-from transformers.models.t5.modeling_t5 import T5Stack
-from model.molecule_gnn_model import GNN
+from transformers import T5ForConditionalGeneration
 import warnings
 from torch.nn import CrossEntropyLoss
 from transformers.utils import logging
 from transformers.modeling_outputs import (
     BaseModelOutput,
-    BaseModelOutputWithPastAndCrossAttentions,
     Seq2SeqLMOutput,
-    Seq2SeqModelOutput,
 )
-from .GraphT5EncoderStack import GraphT5EncoderStack_dict
+from model.GIMLET.GIMLETEncoderStack import GraphT5EncoderStack_dict
 import copy
 logger = logging.get_logger(__name__)
 
@@ -52,7 +45,7 @@ class GraphT5TransformerForConditionalGeneration(T5ForConditionalGeneration):
         encoder_config.use_cache = False
         encoder_config.is_encoder_decoder = False
         self.config.loss_reduction_method = getattr(graph_args,'loss_reduction_method')
-        self.encoder = GraphT5EncoderStack_dict[graph_args.graph_transformer_graph_backbone][graph_args.attention_fasion]\
+        self.encoder = GraphT5EncoderStack_dict[graph_args.transformer_backbone]\
             (encoder_config,graph_args, self.shared)
 
 

@@ -17,7 +17,6 @@ transformers/
 text2mol_data/
 ckpts/
 property_data/
-prompt_data/
 cache/
 plot/
 pretrain_datasets/
@@ -29,5 +28,5 @@ nohup.out
 *.log
 openai_api_key.json
 prompts_backup/
-
-
+prompt_data/mol_cluster.csv
+prompt_data/mole_graph_property.csv

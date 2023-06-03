@@ -16,7 +16,7 @@ from torch.utils.data.dataloader import default_collate
 
 from torch_geometric.data import Data, Batch
 import numpy as np
-from .graph_text_transform import graphormer_data_transform_tensor
+from .graphormer_transform import graphormer_data_transform_tensor
 from .graphormer_collator import collator_graph_data,padding
 from .basic_collate import basic_collate
 import numbers
@@ -75,37 +75,18 @@ class CollatorForSmilesTextLanguageModeling(DataCollatorForLanguageModeling):
 
 
     def torch_call(self, examples):
-        # Handle dict or lists with proper padding and conversion to tensor.
-        # elem = examples[0]
-        #
-        # if isinstance(examples[0], dict):
-        #     batch = self.tokenizer.pad(examples, return_tensors="pt", pad_to_multiple_of=self.pad_to_multiple_of)
-        # else:
-        #     batch = {
-        #         "input_ids": _torch_collate_batch(examples, self.tokenizer, pad_to_multiple_of=self.pad_to_multiple_of)
-        #     }
 
-        # If special token mask has been preprocessed, pop it from the dict.
-
-        #把所有list变成torch tensor
         # graph_batch=[]
         text_batch=[]
         labels_batch=[]
         for example_data in examples:
-            # graph_data=example_data['graph']
-            # graph_batch.append(graph_data)
+
             text_batch.append({'input_ids': example_data['input_ids'],
                     'attention_mask': example_data['attention_mask'],
                                })
-            # if 'labels' in example_data and not isinstance(example_data['labels'],str):
-            labels_batch.append({'labels':example_data['labels'] })
-            # else:
-            #     assert 'label' in example_data and not isinstance(example_data['label'],str)
-            #     labels_batch.append({'labels': example_data['label']})
 
-        # graph_batch = collator_graph_data(graph_batch,transform_in_collator=self.transform_in_collator,rich_features=self.rich_features)
-        # text_batch = self.tokenizer.pad(text_batch, return_tensors="pt", pad_to_multiple_of=self.pad_to_multiple_of)
-        
+            labels_batch.append({'labels':example_data['labels'] })
+
         # galatica tokenizer has no pad_token_id
         if self.tokenizer.pad_token_id is None:
             if '<pad>' in self.tokenizer.vocab:
@@ -117,59 +98,13 @@ class CollatorForSmilesTextLanguageModeling(DataCollatorForLanguageModeling):
         labels_batch = padding(labels_batch, self.tokenizer.pad_token_id, self.tokenizer.pad_token_type_id,
                              pad_to_multiple_of=self.pad_to_multiple_of)
 
-        # graph_batch={'x':graph_batch['graph']['x'],'edge_index':graph_batch['graph']['edge_index'],'edge_attr':graph_batch['graph']['edge_attr'],'batch':graph_batch['graph']['batch'],'ptr':graph_batch['graph']['ptr']}
         batch={'input_ids': text_batch.data['input_ids'],
             'attention_mask': text_batch.data['attention_mask'],
                'labels':labels_batch.data['labels']}
 
         special_tokens_mask = batch.pop("special_tokens_mask", None)
-        # if self.mlm:
-        #     batch["input_ids"], batch["labels"] = self.torch_mask_answer_tokens(
-        #         text_batch, special_tokens_mask=special_tokens_mask
-        #     )
-        # # elif self.mam:
-        #
-        # else:
-        #     labels = batch["input_ids"].clone()
-        #     if self.tokenizer.pad_token_id is not None:
-        #         labels[labels == self.tokenizer.pad_token_id] = -100
-        #     batch["labels"] = labels
+
         return batch
-
-
-    # def torch_mask_answer_tokens(self, text_batch, special_tokens_mask: Optional) :
-    #     """
-    #     Prepare masked tokens inputs/labels for masked language modeling: 80% MASK, 10% random, 10% original.
-    #     """
-    #     import torch
-    #     inputs = text_batch['input_ids'].clone()
-    #     labels = text_batch['input_ids'].clone()
-    #     # We sample a few tokens in each sequence for MLM training (with probability `self.mlm_probability`)
-    #     # probability_matrix = torch.full(labels.shape, self.mlm_probability)
-    #     # if special_tokens_mask is None:
-    #     #     special_tokens_mask = [
-    #     #         self.tokenizer.get_special_tokens_mask(val, already_has_special_tokens=True) for val in labels.tolist()
-    #     #     ]
-    #     #     special_tokens_mask = torch.tensor(special_tokens_mask, dtype=torch.bool)
-    #     # else:
-    #     #     special_tokens_mask = special_tokens_mask.bool()
-    #
-    #     # probability_matrix.masked_fill_(special_tokens_mask, value=0.0)
-    #     masked_indices = ((~text_batch['answer_mask']) & text_batch['attention_mask']).bool()
-    #     labels[~masked_indices] = -100  # We only compute loss on masked tokens
-    #
-    #     # 80% of the time, we replace masked input tokens with tokenizer.mask_token ([MASK])
-    #     indices_replaced = masked_indices
-    #     inputs[indices_replaced] = self.tokenizer.convert_tokens_to_ids(self.tokenizer.mask_token)
-    #
-    #     # # 10% of the time, we replace masked input tokens with random word
-    #     # indices_random = torch.bernoulli(torch.full(labels.shape, 0.5)).bool() & masked_indices & ~indices_replaced
-    #     # random_words = torch.randint(len(self.tokenizer), labels.shape, dtype=torch.long)
-    #     # inputs[indices_random] = random_words[indices_random]
-    #
-    #     # The rest of the time (10% of the time) we keep the masked input tokens unchanged
-    #     return inputs, labels
-
 
 
 # for kvplm add prompt transform, assume data is smiles string, and we contact prompt strings before smiles.
@@ -244,28 +179,6 @@ def kvplm_add_prompt_conditional_generation_transform_single(data,data_label,inp
 
 
 
-
-
-
-
-def kvplm_add_prompt_conditional_generation_transform_sample(data,data_label,input_ids,attention_mask,label_dict,prompt_ids,transform_in_collator,rich_features=False,raw_prompts=None,raw_label=None,tokenizer=None,generaltive_label=False,**kwargs):
-    if not generaltive_label:
-        data_new = {}
-        prompt_ids = prompt_ids[np.random.randint(len(raw_prompts))]
-        tokenized_input=tokenizer(data['smiles']+' '+raw_prompts[prompt_ids]+' '+'[MASK]',max_length=512,truncation=True)
-        data_new['input_ids']=tokenized_input['input_ids']
-        data_new['attention_mask']=tokenized_input['attention_mask']
-        data_new['labels']=np.ones_like(data_new['input_ids'])*-100
-        index_label=np.array(data_new['input_ids'])==tokenizer.vocab['[MASK]']
-        if float(data.y) in label_dict:
-            data_new['labels'][index_label] = label_dict[float(data.y)]
-        else:
-            data_new['labels'][index_label]=label_dict['invalid']
-        data_new['labels'] = data_new['labels'].tolist()
-    else:
-        raise ValueError("Not implemented yet")
-
-    return data_new
 
 
 

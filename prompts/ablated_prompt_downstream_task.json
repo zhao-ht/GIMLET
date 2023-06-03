@@ -2941,37 +2941,6 @@
       ]
     }
   },
-  "sider": {
-    "name": [
-      "The assay name is The Side Effect Resource (SIDER)."
-    ]
-  },
-  "clintox": {
-    "0": {
-      "name": [
-        "The assay name is Is this molecule not a drug?.",
-        "The assay name is Is this molecule not clinical applable? Assay name: Clinical Applicability of Molecule.",
-        "The assay name is \"Toxicity Assay\".",
-        "The assay name is \"Toxicity Assay\".",
-        "The assay name is Toxicity assay.",
-        "The assay name is Toxicology assessment.",
-        "The assay name is Toxicity assay.",
-        "The assay name is \"Drug toxicity assessment\".",
-        "The assay name is \"Toxicity vs. Medicinal Value\"."
-      ]
-    },
-    "1": {
-      "name": [
-        "The assay name is FDA Approval of a Drug. Is this molecule a drug approved by FDA?",
-        "The assay name is New Drug Approval Process. Is this molecule a drug approved by FDA?",
-        "The assay name is Drugs on the Market Approved by FDA. Is this drug approved by FDA?",
-        "The assay name is Is this molecule approved by FDA as drug?.",
-        "The assay name is Is this drug approved by FDA?.",
-        "The assay name is Is this molecule a drug approved by FDA?.",
-        "The assay name is \"FDA approval assay\"."
-      ]
-    }
-  },
   "esol": {
     "0": {
       "name": [

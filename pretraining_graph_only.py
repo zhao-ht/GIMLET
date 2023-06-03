@@ -54,7 +54,7 @@ from transformers.data.data_collator import _torch_collate_batch
 from transformers.tokenization_utils_base import BatchEncoding
 
 from model import GraphT5TransformerForConditionalGeneration,GraphormerModel,GraphTransformer_dict,GraphormerConfig,GinConfig,Graphormer_version_dict,GraphormerModelMultiTask
-from dataloaders import GraphTransformer_tokenizer_dict,GraphTransformer_collator_dict,tokenize_function_graphormer_multitask,CollaterForGraphormerMultiTask
+from dataloaders import graph_text_tokenizer_dict,graph_text_collator_dict,tokenize_function_graphormer_multitask,CollaterForGraphormerMultiTask
 
 from ogb.utils import smiles2graph
 
@@ -140,7 +140,7 @@ class ModelArguments:
     # all_data_to_lower_case: Optional[bool] = field(default=False)
 
     use_graph_transformer: bool = field(default=False)
-    graph_transformer_graph_backbone: str = field(default='gin')
+    transformer_backbone: str = field(default='gin')
     # graph_transformer_text_backbone: str = field(default='t5')
     # attention_fasion: str= field(default='sequential')
 
@@ -346,15 +346,15 @@ def main():
         model_args, data_args, training_args, extra_paras = parser.parse_json_file(json_file=os.path.abspath(sys.argv[1]))
     else:
         model_args, data_args, training_args,left = parser.parse_args_into_dataclasses(return_remaining_strings=True)
-    assert model_args.graph_transformer_graph_backbone in ['graphormer', 'gin']
-    if model_args.graph_transformer_graph_backbone == 'graphormer':
+    assert model_args.transformer_backbone in ['graphormer', 'gin']
+    if model_args.transformer_backbone == 'graphormer':
         parsernew = HfArgumentParser(GraphormerConfig)
         # parsernew = argparse.ArgumentParser()
         parsernew=GraphormerModelMultiTask.add_args(parsernew)
         graph_args=parsernew.parse_args(left)
         graph_args=Graphormer_version_dict[graph_args.arch](graph_args)
         # print('graphormer_args',graphormer_args)
-    elif model_args.graph_transformer_graph_backbone == 'gin':
+    elif model_args.transformer_backbone == 'gin':
         parsernew = HfArgumentParser(GinConfig)
         graph_args = parsernew.parse_args(left)
 
@@ -522,7 +522,7 @@ def main():
 
     # if model_args.model_name_or_path:
     #     if model_args.use_graph_transformer:
-    #         graph_args.graph_transformer_graph_backbone=model_args.graph_transformer_graph_backbone
+    #         graph_args.transformer_backbone=model_args.transformer_backbone
     #         graph_args.attention_fasion=model_args.attention_fasion
     #         model = GraphTransformer_dict[model_args.graph_transformer_text_backbone].from_pretrained(
     #             model_args.model_name_or_path,
@@ -744,7 +744,7 @@ def main():
     # This one will take care of randomly masking the tokens.
     # pad_to_multiple_of_8 = data_args.line_by_line and training_args.fp16 and not data_args.pad_to_max_length
     # if model_args.use_graph_transformer:
-    # data_collator = GraphTransformer_collator_dict[model_args.graph_transformer_graph_backbone][model_args.graph_transformer_text_backbone](
+    # data_collator = GraphTransformer_collator_dict[model_args.transformer_backbone][model_args.graph_transformer_text_backbone](
     #     tokenizer=tokenizer,
     #     mlm_probability=data_args.mlm_probability,
     #     pad_to_multiple_of=8 if pad_to_multiple_of_8 else None,

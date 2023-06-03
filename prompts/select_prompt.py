@@ -32,6 +32,52 @@ def get_num_task(dataset):
 
 augment_type_rename={'origin':'origin','detailed':'detail','rewrited':'rewrite','shortened':'shorten','expanded':'expand'}
 
+
+#rename the augmented prompts
+
+with open("../prompts_backup/downstream_task_prompt_multitask_new.json", 'r') as load_f:
+    prompts_origin = commentjson.load(load_f)
+with open("../prompts_backup/{}_downstream_task_prompt_multitask_new.json".format('augmented'),
+          'r') as load_f:
+    prompts_aug = commentjson.load(load_f)
+
+if 'clintox' in prompts_origin:
+    del prompts_origin['clintox']
+if 'sider' in prompts_origin:
+    del prompts_origin['sider']
+
+
+prompts_rename_all={}
+
+for task in prompts_origin.keys():
+    prompts_rename_all[task]={}
+    for split in prompts_origin[task].keys():
+        if split not in prompts_rename_all[task]:
+            prompts_rename_all[task][split]={}
+        prompts_rename_all[task][split]['origin']=prompts_origin[task][split]
+        if task in prompts_aug:
+            for aug_type in prompts_aug[task][split].keys():
+                prompts_rename_all[task][split][augment_type_rename[aug_type]]=prompts_aug[task][split][aug_type]
+        else:
+            print('{} not augmented'.format(task))
+
+with open('prompt_downstream_task.json','w') as f:
+    commentjson.dump(prompts_origin,f,indent=2)
+with open('augmented_prompt_downstream_task.json','w') as f:
+    commentjson.dump(prompts_rename_all,f,indent=2)
+
+
+
+with open("../prompts_backup/ablated_downstream_task_prompt_multitask_new.json", 'r') as load_f:
+    prompts_ablated = commentjson.load(load_f)
+if 'clintox' in prompts_ablated:
+    del prompts_ablated['clintox']
+if 'sider' in prompts_ablated:
+    del prompts_ablated['sider']
+with open('ablated_prompt_downstream_task.json','w') as f:
+    commentjson.dump(prompts_ablated,f,indent=2)
+
+
 with open("../prompts_backup/downstream_task_prompt_multitask_new.json", 'r') as load_f:
     prompts = commentjson.load(load_f)
 
@@ -85,7 +131,7 @@ prompts_ref = prompts_ref[model_name]
 
 with open("../prompts_backup/downstream_task_prompt_multitask_new.json", 'r') as load_f:
     prompts_origin = commentjson.load(load_f)
-with open("{}_downstream_task_prompt_multitask_new.json".format('augmented'),
+with open("../prompts_backup/{}_downstream_task_prompt_multitask_new.json".format('augmented'),
           'r') as load_f:
     prompts_aug = commentjson.load(load_f)
 
@@ -114,6 +160,7 @@ if 'sider' in prompt_aug_ref_selected:
     del prompt_aug_ref_selected['sider']
 
 
+
 for dataset in prompts_selected.keys():
     for ind in prompts_selected[dataset].keys():
         if dataset in prompt_aug_ref_selected:
@@ -128,11 +175,17 @@ for dataset in prompts_selected.keys():
             prompt_aug_ref_selected[dataset][ind]['origin']=prompts_selected[dataset][ind]
 
 
-with open('all_downstream_task_prompt_multitask.json','w') as f:
+with open('selected_prompt_downstream_task.json.json','w') as f:
     commentjson.dump(prompts_selected,f,indent=2)
 
-with open('all_augmented_downstream_task_prompt_multitask.json','w') as f:
+with open('selected_augmented_prompt_downstream_task.json','w') as f:
     commentjson.dump(prompt_aug_ref_selected,f,indent=2)
+
+
+
+
+
+
 
 
 
@@ -171,8 +224,8 @@ for dataset in all_prompt_pretrain.keys():
     for ind in all_prompt_pretrain[dataset].keys():
         all_augmented_prompt_pretrain_rename[dataset][ind]['origin']=all_prompt_pretrain[dataset][ind]
 
-with open('all_pretrain_prompt.json','w') as f:
+with open('prompt_pretrain.json','w') as f:
     commentjson.dump(all_prompt_pretrain,f,indent=2)
 
-with open('all_augmented_pretrain_prompt.json','w') as f:
+with open('augmented_prompt_pretrain.json','w') as f:
     commentjson.dump(all_augmented_prompt_pretrain_rename,f,indent=2)

@@ -1,4 +1,6 @@
 import torch
+from torch import Tensor
+from typing import List
 from torch_geometric.nn import MessagePassing
 from torch_geometric.utils import add_self_loops, degree, softmax
 from torch_geometric.nn import global_add_pool, global_mean_pool, global_max_pool, GlobalAttention, Set2Set
@@ -11,6 +13,25 @@ num_chirality_tag = 3
 
 num_bond_type = 6 #including aromatic and self-loop edge, and extra masked tokens
 num_bond_direction = 3 
+
+
+def unbatch(src: Tensor, batch: Tensor, dim: int = 0) -> List[Tensor]:
+    r"""Splits :obj:`src` according to a :obj:`batch` vector along dimension
+    :obj:`dim`.
+
+    Args:
+        src (Tensor): The source tensor.
+        batch (LongTensor): The batch vector
+            :math:`\mathbf{b} \in {\{ 0, \ldots, B-1\}}^N`, which assigns each
+            entry in :obj:`src` to a specific example. Must be ordered.
+        dim (int, optional): The dimension along which to split the :obj:`src`
+            tensor. (default: :obj:`0`)
+
+    :rtype: :class:`List[Tensor]`
+    """
+    sizes = degree(batch, dtype=torch.long).tolist()
+    return src.split(sizes, dim)
+
 
 class GINConv(MessagePassing):
     """
@@ -39,7 +60,10 @@ class GINConv(MessagePassing):
         # print('--------------------')
         # print('x:', x.shape)
         # print('edge_index:',edge_index.shape)
-        edge_index, edge_attr = add_self_loops(edge_index, edge_attr, fill_value=0, num_nodes = x.size(0))
+        edge_index_ori=edge_index
+        # print(edge_attr[:,0].numel(), edge_index_ori.size(1))
+        edge_index, edge_attr_0 = add_self_loops(edge_index_ori, edge_attr[:,0], fill_value=0, num_nodes = x.size(0))
+        edge_index, edge_attr_1 = add_self_loops(edge_index_ori, edge_attr[:, 1], fill_value=0, num_nodes=x.size(0))
         
 
         #add features corresponding to self-loop edges.
@@ -51,7 +75,7 @@ class GINConv(MessagePassing):
         # print('--------------------')
         # edge_attr = torch.cat((edge_attr, self_loop_attr), dim = 0)
 
-        edge_embeddings = self.edge_embedding1(edge_attr[:,0]) + self.edge_embedding2(edge_attr[:,1])
+        edge_embeddings = self.edge_embedding1(edge_attr_0) + self.edge_embedding2(edge_attr_1)
 
         return self.propagate(edge_index, x=x, edge_attr=edge_embeddings)
 
@@ -266,7 +290,7 @@ class GNN(torch.nn.Module):
             x, edge_index, edge_attr = argv[0], argv[1], argv[2]
         elif len(argv) == 1:
             data = argv[0]
-            x, edge_index, edge_attr, batch = data.x, data.edge_index, data.edge_attr, data.batch
+            x, edge_index, edge_attr, batch = data['x'], data['edge_index'], data['edge_attr'], data['batch']
         else:
             raise ValueError("unmatched number of arguments.")
 
@@ -296,10 +320,19 @@ class GNN(torch.nn.Module):
             h_list = [h.unsqueeze_(0) for h in h_list]
             node_representation = torch.sum(torch.cat(h_list, dim = 0), dim = 0)[0]
         
-
-        h_graph = self.pool(node_representation, batch)
-
-        return h_graph
+        # print("All nodes in one Batch shape: ", node_representation.shape)
+        if True:
+            h_graph = self.pool(node_representation, batch)
+            return h_graph
+        else:
+            res = list(unbatch(node_representation, batch))
+            h_nodes = torch.nn.utils.rnn.pad_sequence(res, batch_first=True)  # B, L, D
+            attention_mask = torch.zeros(len(res), h_nodes.size(1)+1)
+            for index, each in enumerate(res):
+                attention_mask[index, :each.size(0)+1] = 1
+            h_nodes = torch.cat([h_graph.unsqueeze(1), h_nodes], dim=1)
+                
+            return h_nodes, attention_mask
 
 
 class GNN_graphpred(torch.nn.Module):
@@ -374,7 +407,7 @@ class GNN_graphpred(torch.nn.Module):
             x, edge_index, edge_attr, batch = argv[0], argv[1], argv[2], argv[3]
         elif len(argv) == 1:
             data = argv[0]
-            x, edge_index, edge_attr, batch = data.x, data.edge_index, data.edge_attr, data.batch
+            x, edge_index, edge_attr, batch = data['x'], data['edge_index'], data['edge_attr'], data['batch']
         else:
             raise ValueError("unmatched number of arguments.")
 

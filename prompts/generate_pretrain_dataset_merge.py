@@ -1,15 +1,16 @@
 import pandas as pd
-
+import os
 import argparse
 
 parser = argparse.ArgumentParser()
 
+parser.add_argument('--prompt_dir', type=str, default='../pretrain_datasets')
 parser.add_argument('--merge_file_list', type=str, nargs='+',)
 parser.add_argument('--merge_file_policy', type=str, default='makeup')
 parser.add_argument('--merge_file_ratio', type=float, nargs='+',default=[])
 parser.add_argument('--final_file_name',type=str,default=None)
 parser.add_argument('--split_part',type=int,default=1)
-# parser.add_argument('--final_file_name',type=str,default='')
+
 
 args = parser.parse_args()
 
@@ -19,7 +20,7 @@ args = parser.parse_args()
 df_list=[]
 df_len_list=[]
 for file in args.merge_file_list:
-    df=pd.read_csv(file)
+    df=pd.read_csv(os.path.join(args.prompt_dir,file))
     df_len_list.append(len(df))
     print(file)
     print(df.columns)
@@ -71,9 +72,9 @@ if args.split_part>1:
         result_left = result_left[~result_left.index.isin(result_part.index)]
         print(len(result_part))
         print(len(result_left))
-        result_part.to_csv('split_'+str(i)+'_'+args.final_file_name)
-    result_left.to_csv('split_'+str(args.split_part-1)+'_'+args.final_file_name)
+        result_part.to_csv(os.path.join(args.prompt_dir,'split_'+str(i)+'_'+args.final_file_name))
+    result_left.to_csv(os.path.join(args.prompt_dir,'split_'+str(args.split_part-1)+'_'+args.final_file_name))
 
     # result.to_csv(args.final_file_name)
 else:
-    result.to_csv(args.final_file_name)
+    result.to_csv(os.path.join(args.prompt_dir,args.final_file_name))

@@ -196,26 +196,21 @@ class MoleculeDatasetRich(MyMoleculeNet):
         self.return_smiles=return_smiles
         self.rich_features=rich_features
 
-
         if recache_preprocess:
             os.makedirs(self.processed_dir)
             self.process()
 
     def get(self, idx):
         data=super(MoleculeDatasetRich,self).get(idx)
-        # data['y']=data['y']*2-1
         data['y'][data['y'].isnan()]=-100
-        # if self.name=='esol':
-        #     data['y']=-data['y']
         if self.return_id:
             data['id']=idx
         if not self.return_smiles:
             data.__delattr__('smiles')
         if not self.rich_features:
-            data['x']=data['x'][:,0:3]
+            data['x']=data['x'][:,0:2]
             data['edge_attr'] = data['edge_attr'][:,0:2]
         return data
-
 
     def download(self):
         if self.name!='cyp450':
@@ -248,7 +243,6 @@ class MoleculeDatasetRich(MyMoleculeNet):
             ys = [float(y) if len(y) > 0 else float('NaN') for y in ys]
             y = torch.tensor(ys, dtype=torch.float).view(1, -1)
 
-
             data = Data(x=torch.tensor(graph['node_feat']), edge_index=torch.tensor(graph['edge_index']), edge_attr=torch.tensor(graph['edge_feat']), y=y,
                         smiles=smiles)
             data_smiles_list.append(smiles)
@@ -276,10 +270,10 @@ class MoleculeDatasetRich(MyMoleculeNet):
 
 class MoleculeDatasetSplitLabel(MoleculeDatasetRich):
     def __init__(self, root, name, transform=None, pre_transform=None,
-                 pre_filter=None,return_id=False,return_smiles=False,split_label=False,single_split=None,recache_preprocess=False):
+                 pre_filter=None,return_id=False,return_smiles=False,split_label=False,single_split=None,recache_preprocess=False,rich_features=True):
 
         super(MoleculeDatasetSplitLabel, self).__init__(root, name, transform, pre_transform,
-                 pre_filter,return_id=return_id,return_smiles=return_smiles,recache_preprocess=recache_preprocess)
+                 pre_filter,return_id=return_id,return_smiles=return_smiles,recache_preprocess=recache_preprocess,rich_features=rich_features)
         # if split_label:
         self.split_label=split_label
         self.single_split=single_split

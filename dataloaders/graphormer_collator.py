@@ -14,7 +14,7 @@ from torch.utils.data.dataloader import default_collate
 
 from torch_geometric.data import Data, Batch
 import numpy as np
-from .graph_text_transform import graphormer_data_transform_tensor
+from .graphormer_transform import graphormer_data_transform_tensor
 from ogb.utils import smiles2graph
 import time
 
