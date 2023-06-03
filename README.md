@@ -74,7 +74,7 @@ pip install openai
 
 
 ### Checkpoint Download
-Please download pytorch_model.bin from [https://drive.google.com/file/d/1Q76Ux9185jF9SXLv22gihuig-HxyGE8a/view?usp=sharing](https://drive.google.com/file/d/1Q76Ux9185jF9SXLv22gihuig-HxyGE8a/view?usp=sharing) and move it to .\ckpts\gimlet. You can do this by the following scripts:
+Please download pytorch_model.bin from [https://drive.google.com/file/d/1ROU4SLW2NF9EtT70JC_SHC1OZIPB90id/view?usp=sharing](https://drive.google.com/file/d/1ROU4SLW2NF9EtT70JC_SHC1OZIPB90id/view?usp=sharing) and move it to .\ckpts\gimlet. You can do this by the following scripts:
 
 ```
 mkdir ckpts
