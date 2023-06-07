@@ -1,7 +1,7 @@
 # GIMLET
 
 
-This is the code for paper [GIMLET: A Unified Graph-Text Model for Instruction-Based Molecule Zero-Shot Learning](https://www.biorxiv.org/content/10.1101/2023.05.30.542904v1.full.pdf).
+This is the code for paper [GIMLET: A Unified Graph-Text Model for Instruction-Based Molecule Zero-Shot Learning](https://www.biorxiv.org/content/10.1101/2023.05.30.542904).
 
 GIMLET is a unified transformer model for both graph and text data and is pretrained on large scale molecule tasks with instructions, towards instruction-based molecule zero-shot learning. The framework and pretraining & downstream tasks are as follows:
 
@@ -239,7 +239,14 @@ You can run your own pretraining by specifying --train_file as your pretraining 
 
 Please cite our paper if you find it helpful.
 ```
-Comming soon
+@article{zhao2023gimlet,
+  title={GIMLET: A Unified Graph-Text Model for Instruction-Based Molecule Zero-Shot Learning},
+  author={Zhao, Haiteng and Liu, Shengchao and Ma, Chang and Xu, Hannan and Fu, Jie and Deng, Zhi-Hong and Kong, Lingpeng and Liu, Qi},
+  journal={bioRxiv},
+  pages={2023--05},
+  year={2023},
+  publisher={Cold Spring Harbor Laboratory}
+}
 ```
 
 
