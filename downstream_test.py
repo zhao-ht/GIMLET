@@ -174,7 +174,7 @@ fig_number=0
 
 
 
-def downstream_task_by_transform(transform,model,train_loader,val_loader,test_loader,prompt=''):
+def downstream_task_by_transform(model,train_loader,val_loader,test_loader,prompt=''):
     #reload the model parameter
     if args.few_shot:
         model = get_model(args, graph_args,tokenizer)
@@ -533,7 +533,7 @@ if __name__ == '__main__':
             val_loader.dataset.transform = transform
             test_loader.dataset.transform = transform
 
-            downstream_task_by_transform(transform,model,train_loader,val_loader,test_loader,prompt[args.prompt_id[0]])
+            downstream_task_by_transform(model,train_loader,val_loader,test_loader,prompt[args.prompt_id[0]])
 
         elif args.prompt_policy == 'traversal':
             for prompt_id in args.prompt_id[str(single_split_label)]:
@@ -550,7 +550,7 @@ if __name__ == '__main__':
                 val_loader.dataset.transform = transform
                 test_loader.dataset.transform = transform
 
-                downstream_task_by_transform(transform,model,train_loader,val_loader,test_loader,prompt[str(single_split_label)][prompt_id])
+                downstream_task_by_transform(model,train_loader,val_loader,test_loader,prompt[str(single_split_label)][prompt_id])
 
         else:
             raise ValueError('prompt_policy not implemented yet')
