@@ -24,8 +24,9 @@ import numbers
 def gpt3_conditional_generation_tokenizer(examples,tokenizer,text_column_name,padding,max_seq_length,**kwargs):
 
     data_new = {}
+    text = examples[text_column_name] if isinstance(examples[text_column_name], str) else examples[text_column_name][0]
     tokenized_input = tokenizer(
-        'Please answer questions on this molecule. The SMILES of this molecule is:' + examples['graph'] + '\n\n##Question: ' + examples[text_column_name] + '\n\nAnswer:',
+        'Please answer questions on this molecule. The SMILES of this molecule is:' + examples['graph'] + '\n\n##Question: ' + text + '\n\nAnswer:',
         padding=padding,
         truncation=True,
         max_length=max_seq_length,

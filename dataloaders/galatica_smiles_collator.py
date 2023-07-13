@@ -67,9 +67,10 @@ class CollatorForSmilesTextLanguageModeling(DataCollatorForLanguageModeling):
 def galactica_conditional_generation_tokenizer(examples,tokenizer,text_column_name,padding,max_seq_length,**kwargs):
 
     data_new = {}
+    text = examples[text_column_name] if isinstance(examples[text_column_name], str) else examples[text_column_name][0]
     tokenized_input = tokenizer(
         # examples[text_column_name]+ ' ',
-        '[START_I_SMILES]' + examples['graph'] + '[END_I_SMILES]\n\n##Question: ' + examples[text_column_name] + '\n\nAnswer:',
+        '[START_I_SMILES]' + examples['graph'] + '[END_I_SMILES]\n\n##Question: ' + text + '\n\nAnswer:',
         padding=padding,
         truncation=True,
         max_length=max_seq_length,

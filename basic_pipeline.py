@@ -66,7 +66,7 @@ def eval_result(model, loader,label_dict,tokenizer,task_type,transformer_backbon
                 batch[key] = batch[key].to(model.device)
             with torch.no_grad():
                 labels=batch["labels"]
-                if labels.shape[1]>1: # Yes <s>
+                if labels.shape[1]>1 and not transformer_backbone in ['kvplm']: # Yes <s>
                     assert all((labels[:,1]==tokenizer.eos_token_id) + (labels[:,1]==id_invalid))
                     labels=labels[:,0].unsqueeze(1)
                 del batch["labels"]

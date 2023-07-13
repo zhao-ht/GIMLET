@@ -31,8 +31,11 @@ prompts_backup/
 prompt_data/mol_cluster.csv
 prompt_data/mole_graph_property.csv
 create_dataset.py
+create_pretraining_dataset.py
 create_hug_repo.py
 huggingface_dataset.py
 download_huggingface_dataset.py
 downstream_test_huggingface.py
+download_huggingface_model.py
+debug.py
 

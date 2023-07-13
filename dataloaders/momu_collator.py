@@ -23,8 +23,9 @@ from ogb.utils import smiles2graph
 def contrastive_conditional_generation_tokenizer(examples,tokenizer,text_column_name,padding,max_seq_length,rich_features,**kwargs):
     label_dict={'Yes':[1],'No':[0]}
     data_new = {}
-    tokenized_input_pos=tokenizer(examples[text_column_name]+' '+'Yes',truncation=True,max_length=512)
-    tokenized_input_neg=tokenizer(examples[text_column_name]+' '+'No',truncation=True,max_length=512)
+    text=examples[text_column_name] if isinstance(examples[text_column_name],str) else examples[text_column_name][0]
+    tokenized_input_pos=tokenizer(text+' '+'Yes',truncation=True,max_length=512)
+    tokenized_input_neg=tokenizer(text+' '+'No',truncation=True,max_length=512)
     # if not transform_in_collator:
     #     examples['graph'] = smiles2graph(examples['graph'])
     data_new['graph']=examples['graph']

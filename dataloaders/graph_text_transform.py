@@ -71,7 +71,7 @@ def tokenize_function_gin_T5(examples,tokenizer,text_column_name,padding,max_seq
     # Remove empty lines
     # examples[text_column_name] = [line for line in examples[text_column_name] if len(line) > 0 and not line.isspace()]
     text = tokenizer(
-        examples[text_column_name],
+        examples[text_column_name] if isinstance(examples[text_column_name],str) else examples[text_column_name][0],
         padding=padding,
         truncation=True,
         max_length=max_seq_length,
@@ -107,7 +107,7 @@ def tokenize_function_gimlet(examples, tokenizer, text_column_name, padding, max
     # Remove empty lines
     # examples[text_column_name] = [line for line in examples[text_column_name] if len(line) > 0 and not line.isspace()]
     text = tokenizer(
-        examples[text_column_name],
+        examples[text_column_name] if isinstance(examples[text_column_name],str) else examples[text_column_name][0], # if examples[text_column_name] is list
         padding=padding,
         truncation=True,
         max_length=max_seq_length,

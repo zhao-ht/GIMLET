@@ -113,9 +113,10 @@ class CollatorForSmilesTextLanguageModeling(DataCollatorForLanguageModeling):
 def kvplm_conditional_generation_tokenizer(examples,tokenizer,text_column_name,padding,max_seq_length,**kwargs):
 
     data_new = {}
+    text=examples[text_column_name] if isinstance(examples[text_column_name],str) else examples[text_column_name][0]
     tokenized_input = tokenizer(
         examples['graph'] + ' '+
-        examples[text_column_name]+ ' ',
+        text+ ' ',
         padding=padding,
         truncation=True,
         max_length=max_seq_length,

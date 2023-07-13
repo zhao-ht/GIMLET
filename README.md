@@ -13,6 +13,30 @@ GIMLET is a unified transformer model for both graph and text data and is pretra
 We also benchmark baselines including KVPLM, MoMu, and Galactica on our downstream tasks for instruction-based zero-shot learning.
 
 
+## Updates
+
+### 2023.7.10
+
+**1.** Now the datasets and the GIMLET model can be download directly from HuggingFace: [https://huggingface.co/datasets/haitengzhao/molecule_property_instruction](https://huggingface.co/datasets/haitengzhao/molecule_property_instruction) and [https://huggingface.co/haitengzhao/gimlet](https://huggingface.co/haitengzhao/gimlet).
+
+The GIMLET model can be downloaded and used as follows:
+
+```
+from model import GraphT5TransformerForConditionalGeneration
+model = GraphT5TransformerForConditionalGeneration.from_pretrained("haitengzhao/gimlet")
+```
+
+Our datasets can be downloaded and used as follows:
+
+```
+from datasets import load_dataset
+dataset = load_dataset("haitengzhao/molecule_property_instruction")
+```
+
+We have made updates to the pipeline and scripts to accommodate the new loading methods. Try out the new implementation in your projects and enjoy the improved experience!
+
+**2.** A few bugs in KVPLM testing have been fixed.
+
 ## Installation
 To run GIMLET, please clone the repository to your local machine and install the required dependencies using the script provided.
 
@@ -74,7 +98,19 @@ pip install openai
 
 
 ### Checkpoint Download
-Please download pytorch_model.bin from [https://drive.google.com/file/d/1ROU4SLW2NF9EtT70JC_SHC1OZIPB90id/view?usp=sharing](https://drive.google.com/file/d/1ROU4SLW2NF9EtT70JC_SHC1OZIPB90id/view?usp=sharing) and move it to .\ckpts\gimlet. You can do this by the following scripts:
+
+#### Method 1: HuggingFace
+
+Our model can now be downloaded from HuggingFace. To download the model parameters, you can simply specify **--model_name_or_path** as **haitengzhao/gimlet**. Here's an example:
+
+```
+from model import GraphT5TransformerForConditionalGeneration
+model = GraphT5TransformerForConditionalGeneration.from_pretrained("haitengzhao/gimlet")
+```
+
+#### Method 2: Manual Download
+
+You can also download pytorch_model.bin from [https://drive.google.com/file/d/1ROU4SLW2NF9EtT70JC_SHC1OZIPB90id/view?usp=sharing](https://drive.google.com/file/d/1ROU4SLW2NF9EtT70JC_SHC1OZIPB90id/view?usp=sharing) and move it to **.\ckpts\gimlet**. You can do this by the following scripts:
 
 ```
 mkdir ckpts
@@ -90,9 +126,16 @@ cd ..
 cd ..
 ```
 
+In this case, the **--model_name_or_path**  refers to the path of the checkpoint directory, which is **ckpts/gimlet**.
+
 
 ### Dataset Download
 
+#### Method 1: HuggingFace
+Our datasets is available for download on HuggingFace. You can automatically download the datasets and use the huggingface dataset pipeline by augment **--use_huggingface_pipeline**.
+
+#### Method 2: Manual Download
+Alternatively, you can run experiments from the original molecule datasets. In this pipeline, we will incorporate instruction text to the molecule data during the experimentation process.
 The MoleculeNet datasets, which comprise pcba, bace, hiv, muv, tox21, toxcast, bbbp, esol, lipo, and freesolv, can be conveniently downloaded automatically upon the first run. Alternatively, you can manually download them by following the script below:
 
 ```
@@ -113,8 +156,11 @@ Besides MoleculeNet, we also includes CYP450 which can be downloaded from [https
 The script to run one downstream task is 
 
 ```
-CUDA_VISIBLE_DEVICES=0 python downstream_test.py --zero_shot  --transformer_backbone gimlet --model_name_or_path ckpts/gimlet  --tokenizer_name t5-small --dataset bace --runseed 5  --batch_size 40 --grad_accum_step 1  --transform_in_collator 
+CUDA_VISIBLE_DEVICES=0 python downstream_test.py --zero_shot  --transformer_backbone gimlet --model_name_or_path haitengzhao/gimlet  --tokenizer_name t5-small --dataset bace --runseed 5  --batch_size 40 --grad_accum_step 1  --transform_in_collator --only_test --use_huggingface_pipeline
 ```
+
+You have the option to include the **--use_huggingface_pipeline** flag to utilize the HuggingFace dataset pipeline. This feature is applicable for both GIMLET and baseline models in downstream scenarios involving zero-shot and few-shot settings.
+
 
 To execute all the downstream tasks, you can utilize the script downstream_test.sh. Running this script will generate results that will be written into the file "./cache/testing_$modelname.csv".
 ```
@@ -149,7 +195,6 @@ bash downstream_test.sh 0 kvplm_aug ckpt_KV.pt 0 rewrite
 bash downstream_test.sh 0 momu_aug littlegin=graphclinit_bert=scibert_epoch=299-step=18300.pt 0 rewrite
 ```
 
-
 ## Run Few-Shot Learning
 
 You can run few-shot learning for all the downstream tasks by specify the few-shot number:
@@ -170,9 +215,25 @@ bash downstream_test.sh 0 momu_fewshot littlegin=graphclinit_bert=scibert_epoch=
 
 ## Run the Pretraining 
 
-### Pretraining Data
+### Run the Pretraining
 
-You can download the pretraining dataset if you want to reproduce the pretraining or train your own model. The Chembl dataset can be downloaded and processed by the following steps:
+To reproduce the pretraining on Chembl and Chembl property datasets, you can run the following command:
+```
+CUDA_VISIBLE_DEVICES=0  python pretraining_gimlet.py --model_name_or_path t5-small --tokenizer_name t5-small  --transformer_backbone gimlet --do_train  --train_file haitengzhao/molecule_property_instruction   --transform_in_collator --per_device_train_batch_size 64 --gradient_accumulation_steps 1 --per_device_eval_batch_size 200   --line_by_line  --loss_reduction_method sentence --save_steps 10000 --output_dir ckpts/gimlet_new  
+```
+
+You can validate the pretrained model on the splitted Chembl dataset (Chembl Zero Shot):
+
+```
+CUDA_VISIBLE_DEVICES=0  python pretraining_gimlet.py --model_name_or_path ckpts/gimlet_new --tokenizer_name t5-small  --transformer_backbone gimlet --do_eval  --validation_file haitengzhao/molecule_property_instruction   --transform_in_collator --per_device_train_batch_size 64 --gradient_accumulation_steps 1 --per_device_eval_batch_size 200   --line_by_line  --loss_reduction_method sentence --save_steps 10000 --output_dir ckpts/gimlet_new  
+```
+
+You can run your own pretraining by specifying --train_file as your pretraining file, or imply your model into the pipeline.
+
+
+### Reproducing the Pretraining Data Generation
+
+You can reproduce the pretraining dataset generation if you want to imply your own instruction methods. The Chembl dataset can be downloaded and processed by the following steps:
 ```
 cd prompt_data/
 
@@ -208,6 +269,7 @@ cd ..
 Produce the pretraining dataset by the following script:
 
 ```
+cd prompts
 python generate_pretrain_dataset.py --generate_assay_text --generate_mole_text --split_non_overlap --add_negation --use_augmented_prompt
 ```
 
@@ -217,23 +279,7 @@ And merge the generated dataset together:
 python generate_pretrain_dataset_merge.py --merge_file_list assay_graph_text_train_non_overlap_split_0.csv assay_graph_text_detail_train_non_overlap_split_0.csv assay_graph_text_expand_train_non_overlap_split_0.csv assay_graph_text_rewrite_train_non_overlap_split_0.csv assay_graph_text_shorten_train_non_overlap_split_0.csv property_graph_text_negative05_train_non_overlap_split_0.csv   property_graph_text_negative05_detail_train_non_overlap_split_0.csv property_graph_text_negative05_expand_train_non_overlap_split_0.csv property_graph_text_negative05_rewrite_train_non_overlap_split_0.csv property_graph_text_negative05_shorten_train_non_overlap_split_0.csv   --merge_file_policy custom --merge_file_ratio 1.0 1.0 1.0 1.0 1.0 1.0 0.25 0.25 0.25 0.25  --final_file_name merge_split0.csv
 ```
 
-### Run the Pretraining
-
-After creating the pretraining datasets, you can reproduce the pretraining by yourself:
-
-```
-CUDA_VISIBLE_DEVICES=0  python pretraining_gimlet.py --model_name_or_path t5-small --tokenizer_name t5-small  --transformer_backbone gimlet --do_train  --train_file pretrain_datasets/merge_split0.csv   --transform_in_collator --per_device_train_batch_size 64 --gradient_accumulation_steps 1 --per_device_eval_batch_size 200   --line_by_line  --loss_reduction_method sentence --save_steps 10000 --output_dir ckpts/gimlet_new  
-```
-
-You can validate the pretrained model on the splitted Chembl dataset (Chembl Zero Shot):
-
-```
-CUDA_VISIBLE_DEVICES=0  python pretraining_gimlet.py --model_name_or_path ckpts/gimlet_new --tokenizer_name t5-small  --transformer_backbone gimlet --do_eval  --validation_file pretrain_datasets/assay_graph_text_valid_non_overlap_split_0.csv   --transform_in_collator --per_device_train_batch_size 64 --gradient_accumulation_steps 1 --per_device_eval_batch_size 200   --line_by_line  --loss_reduction_method sentence --save_steps 10000 --output_dir ckpts/gimlet_new  
-```
-
-
-You can run your own pretraining by specifying --train_file as your pretraining file, or imply your model into the pipeline.
-
+In this scenario, the pretraining data is the file "pretrain_datasets/merge_split0.csv". To validate the pretrained model, you can use the data file "pretrain_datasets/assay_graph_text_valid_non_overlap_split_0.csv". To specify these files as the training and validation data, use the arguments **--train_file** and **--validation_file** with their respective file paths.
 
 ## Citation
 

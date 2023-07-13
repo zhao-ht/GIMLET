@@ -21,26 +21,36 @@ from transformers import (
 
 def get_model(args,graph_args,tokenizer):
     if not (args.transformer_backbone in ['kvplm','momu','galactica','gpt3']):
-        config_kwargs = {
-            "cache_dir": None,
-            "revision": 'main',
-            "use_auth_token":  None,
-        }
-        config = AutoConfig.from_pretrained(args.tokenizer_name, **config_kwargs)
-        config.vocab_size=len(tokenizer)
-        graph_args.transformer_backbone = args.transformer_backbone
 
-        model = GraphTransformer_dict[args.transformer_backbone].from_pretrained(
-            args.model_name_or_path,
-            from_tf=bool(".ckpt" in args.model_name_or_path),
-            config=config,
-            graph_args=graph_args,
-            cache_dir=None,
-            revision='main',
-            use_auth_token=None,
-            ignore_mismatched_sizes=True,
-        )
-        model.resize_token_embeddings(len(tokenizer))
+        if args.model_name_or_path=='haitengzhao/gimlet':
+            model = GraphTransformer_dict[args.transformer_backbone].from_pretrained(
+                args.model_name_or_path,
+            )
+
+        else: #load from local file:
+            config_kwargs = {
+                "cache_dir": None,
+                "revision": 'main',
+                "use_auth_token":  None,
+            }
+            config = AutoConfig.from_pretrained(args.tokenizer_name, **config_kwargs)
+            config.vocab_size=len(tokenizer)
+            graph_args.transformer_backbone = args.transformer_backbone
+            config.graph_args = vars(graph_args)  #use the user-provided graph args
+
+            model = GraphTransformer_dict[args.transformer_backbone].from_pretrained(
+                args.model_name_or_path,
+                from_tf=bool(".ckpt" in args.model_name_or_path),
+                config=config,
+                # graph_args=graph_args,
+                cache_dir=None,
+                revision='main',
+                use_auth_token=None,
+                ignore_mismatched_sizes=True,
+            )
+            model.resize_token_embeddings(len(tokenizer))
+
+
     elif args.transformer_backbone == 'kvplm':
         model = GraphTransformer_dict[args.transformer_backbone](graph_args)
     elif args.transformer_backbone == 'momu':

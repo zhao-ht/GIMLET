@@ -7,6 +7,7 @@ from transformers.modeling_outputs import (
     BaseModelOutput,
     Seq2SeqLMOutput,
 )
+from transformers import AutoConfig,PretrainedConfig
 from model.GIMLET.GIMLETEncoderStack import GraphT5EncoderStack_dict
 import copy
 logger = logging.get_logger(__name__)
@@ -33,7 +34,7 @@ class GraphT5TransformerForConditionalGeneration(T5ForConditionalGeneration):
         r"decoder.block.0.layer.1.EncDecAttention.relative_attention_bias.weight",
     ]
 
-    def __init__(self, config,graph_args):
+    def __init__(self, config,graph_args=None):
 
         #for debug
         # config.dropout_rate=0.0
@@ -44,6 +45,13 @@ class GraphT5TransformerForConditionalGeneration(T5ForConditionalGeneration):
         encoder_config.is_decoder = False
         encoder_config.use_cache = False
         encoder_config.is_encoder_decoder = False
+
+        if graph_args is None:
+            assert hasattr(config,'graph_args')
+            graph_args= PretrainedConfig.from_dict(config.graph_args)
+        else:
+            config.graph_args = vars(graph_args)
+
         self.config.loss_reduction_method = getattr(graph_args,'loss_reduction_method')
         self.encoder = GraphT5EncoderStack_dict[graph_args.transformer_backbone]\
             (encoder_config,graph_args, self.shared)

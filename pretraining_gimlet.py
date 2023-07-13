@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from itertools import chain
 from typing import Optional
 import datasets
-from datasets import load_dataset
+from datasets import load_dataset,DatasetDict
 import transformers
 from transformers import (
     CONFIG_MAPPING,
@@ -185,18 +185,18 @@ class DataTrainingArguments:
     transform_in_collator: Optional[bool] = field(default=False)
     wrap_dataset: Optional[bool] = field(default=False)
 
-    def __post_init__(self):
-        if self.dataset_name is None and self.train_file is None and self.validation_file is None:
-            raise ValueError("Need either a dataset name or a training/validation file.")
-        else:
-            if self.train_file is not None:
-                extension = self.train_file.split(".")[-1]
-                if extension not in ["csv", "json", "txt"]:
-                    raise ValueError("`train_file` should be a csv, a json or a txt file.")
-            if self.validation_file is not None:
-                extension = self.validation_file.split(".")[-1]
-                if extension not in ["csv", "json", "txt"]:
-                    raise ValueError("`validation_file` should be a csv, a json or a txt file.")
+    # def __post_init__(self):
+    #     if self.dataset_name is None and self.train_file is None and self.validation_file is None:
+    #         raise ValueError("Need either a dataset name or a training/validation file.")
+    #     else:
+    #         if self.train_file is not None:
+    #             extension = self.train_file.split(".")[-1]
+    #             if extension not in ["csv", "json", "txt"]:
+    #                 raise ValueError("`train_file` should be a csv, a json or a txt file.")
+    #         if self.validation_file is not None:
+    #             extension = self.validation_file.split(".")[-1]
+    #             if extension not in ["csv", "json", "txt"]:
+    #                 raise ValueError("`validation_file` should be a csv, a json or a txt file.")
 
 # def eval_result(trainer,task_type='cla'):
 #
@@ -416,29 +416,39 @@ def main():
     # Set seed before initializing model.
     set_seed(training_args.seed)
 
-    if data_args.dataset_name is not None:
-        # Downloading and loading a dataset from the hub.
-        raw_datasets = load_dataset(
-            data_args.dataset_name,
-            data_args.dataset_config_name,
-            cache_dir=model_args.cache_dir,
-            use_auth_token=True if model_args.use_auth_token else None,
-        )
-        if "validation" not in raw_datasets.keys():
-            raw_datasets["validation"] = load_dataset(
-                data_args.dataset_name,
-                data_args.dataset_config_name,
-                split=f"train[:{data_args.validation_split_percentage}%]",
-                cache_dir=model_args.cache_dir,
-                use_auth_token=True if model_args.use_auth_token else None,
-            )
-            raw_datasets["train"] = load_dataset(
-                data_args.dataset_name,
-                data_args.dataset_config_name,
-                split=f"train[{data_args.validation_split_percentage}%:]",
-                cache_dir=model_args.cache_dir,
-                use_auth_token=True if model_args.use_auth_token else None,
-            )
+    # if data_args.dataset_name is not None:
+    #     # Downloading and loading a dataset from the hub.
+    #     raw_datasets = load_dataset(
+    #         data_args.dataset_name,
+    #         data_args.dataset_config_name,
+    #         cache_dir=model_args.cache_dir,
+    #         use_auth_token=True if model_args.use_auth_token else None,
+    #     )
+    #     if "validation" not in raw_datasets.keys():
+    #         raw_datasets["validation"] = load_dataset(
+    #             data_args.dataset_name,
+    #             data_args.dataset_config_name,
+    #             split=f"train[:{data_args.validation_split_percentage}%]",
+    #             cache_dir=model_args.cache_dir,
+    #             use_auth_token=True if model_args.use_auth_token else None,
+    #         )
+    #         raw_datasets["train"] = load_dataset(
+    #             data_args.dataset_name,
+    #             data_args.dataset_config_name,
+    #             split=f"train[{data_args.validation_split_percentage}%:]",
+    #             cache_dir=model_args.cache_dir,
+    #             use_auth_token=True if model_args.use_auth_token else None,
+    #         )
+    if data_args.train_file=='haitengzhao/molecule_property_instruction' or data_args.validation_file=='haitengzhao/molecule_property_instruction':
+        raw_datasets={}
+        dataset_full=load_dataset("haitengzhao/molecule_property_instruction",
+                     # download_mode = "force_redownload"
+                     )
+        if training_args.do_train:
+            raw_datasets['train']=dataset_full['chembl_pretraining']
+        if training_args.do_eval:
+            raw_datasets['validation']=dataset_full['chembl_zero_shot']
+        raw_datasets=DatasetDict(raw_datasets)
     else:
         data_files = {}
         if data_args.train_file is not None:
