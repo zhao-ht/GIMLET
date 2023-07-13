@@ -17,7 +17,7 @@ We also benchmark baselines including KVPLM, MoMu, and Galactica on our downstre
 
 ### 2023.7.10
 
-**1.** Now the datasets and the GIMLET model can be download directly from HuggingFace: [https://huggingface.co/datasets/haitengzhao/molecule_property_instruction](https://huggingface.co/datasets/haitengzhao/molecule_property_instruction) and [https://huggingface.co/haitengzhao/gimlet](https://huggingface.co/haitengzhao/gimlet).
+**1.** Now the datasets and the GIMLET model can be download directly from HuggingFace  🤗 : [https://huggingface.co/datasets/haitengzhao/molecule_property_instruction](https://huggingface.co/datasets/haitengzhao/molecule_property_instruction) and [https://huggingface.co/haitengzhao/gimlet](https://huggingface.co/haitengzhao/gimlet).
 
 The GIMLET model can be downloaded and used as follows:
 
@@ -101,7 +101,7 @@ pip install openai
 
 #### Method 1: HuggingFace
 
-Our model can now be downloaded from HuggingFace. To download the model parameters, you can simply specify **--model_name_or_path** as **haitengzhao/gimlet**. Here's an example:
+Our model can now be downloaded from HuggingFace  🤗 . To download the model parameters, you can simply specify **--model_name_or_path** as **haitengzhao/gimlet**. Here's an example:
 
 ```
 from model import GraphT5TransformerForConditionalGeneration
@@ -132,7 +132,7 @@ In this case, the **--model_name_or_path**  refers to the path of the checkpoint
 ### Dataset Download
 
 #### Method 1: HuggingFace
-Our datasets is available for download on HuggingFace. You can automatically download the datasets and use the huggingface dataset pipeline by augment **--use_huggingface_pipeline**.
+Our datasets is available for download on HuggingFace  🤗 . You can automatically download the datasets and use the huggingface dataset pipeline by augment **--use_huggingface_pipeline**.
 
 #### Method 2: Manual Download
 Alternatively, you can run experiments from the original molecule datasets. In this pipeline, we will incorporate instruction text to the molecule data during the experimentation process.
