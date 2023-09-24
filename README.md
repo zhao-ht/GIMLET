@@ -15,6 +15,10 @@ We also benchmark baselines including KVPLM, MoMu, and Galactica on our downstre
 
 ## Updates
 
+### 2023.9.24
+
+Out work has been accepted at NeurIPS 2023! The camera ready paper is coming soon.
+
 ### 2023.7.10
 
 **1.** Now the datasets and the GIMLET model can be download directly from HuggingFace  🤗 : [https://huggingface.co/datasets/haitengzhao/molecule_property_instruction](https://huggingface.co/datasets/haitengzhao/molecule_property_instruction) and [https://huggingface.co/haitengzhao/gimlet](https://huggingface.co/haitengzhao/gimlet).
