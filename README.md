@@ -64,7 +64,7 @@ pip install torch_spline_conv-1.2.1-cp37-cp37m-linux_x86_64.whl
 
 pip install torch_geometric==1.7.2
 
-git clone https://github.com/huggingface/transformers
+git clone -b v4.28.1 https://github.com/huggingface/transformers
 
 cd transformers
 pip install --editable ./
