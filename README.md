@@ -17,7 +17,7 @@ We also benchmark baselines including KVPLM, MoMu, and Galactica on our downstre
 
 ### 2023.9.24
 
-Out work has been accepted at NeurIPS 2023! The camera ready paper is coming soon.
+Out work has been accepted at NeurIPS 2023! The camera ready paper is at [https://proceedings.neurips.cc/paper_files/paper/2023/file/129033c7c08be683059559e8d6bfd460-Paper-Conference.pdf](https://proceedings.neurips.cc/paper_files/paper/2023/file/129033c7c08be683059559e8d6bfd460-Paper-Conference.pdf).
 
 ### 2023.7.10
 
@@ -289,13 +289,12 @@ In this scenario, the pretraining data is the file "pretrain_datasets/merge_spli
 
 Please cite our paper if you find it helpful or use our datasets.
 ```
-@article{zhao2023gimlet,
-  title={GIMLET: A Unified Graph-Text Model for Instruction-Based Molecule Zero-Shot Learning},
-  author={Zhao, Haiteng and Liu, Shengchao and Ma, Chang and Xu, Hannan and Fu, Jie and Deng, Zhi-Hong and Kong, Lingpeng and Liu, Qi},
-  journal={bioRxiv},
-  pages={2023--05},
-  year={2023},
-  publisher={Cold Spring Harbor Laboratory}
+@article{zhao2024gimlet,
+  title={Gimlet: A unified graph-text model for instruction-based molecule zero-shot learning},
+  author={Zhao, Haiteng and Liu, Shengchao and Chang, Ma and Xu, Hannan and Fu, Jie and Deng, Zhihong and Kong, Lingpeng and Liu, Qi},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
 }
 ```
 
